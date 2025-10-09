@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/safatel.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <title>SafaTel</title>
+    </head>
+    <body>
+        <header>
+          <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <a class="navbar-brand" href="../html/safatel.html">
+                    <img src="../imagenes/SafaTel.png">
+                </a>
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/safatel.html">inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/hoteles.html">hoteles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ofertas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">¿quiénes somos?</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">acerca de</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 d-md-block" id="auth-buttons">
+                  <a class="btn btn-primary" href="../html/inicio-sesion.html" role="button">REGISTRARSE</a>
+                  <a class="btn btn-primary" href="../html/inicio-sesion2.html" role="button">INICIAR SESIÓN</a>
+                </div>
+                <div id="user-info" class="hidden-element">
+                    <img class="icono-cuenta" src="../imagenes/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                    <span class="user-name"></span>
+                    <img class="log-out" src="../imagenes/logout_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                </div>
+              </nav>
+            </div>
+        </header>
+        <main>
+            <div class="banner">
+              <img src="../imagenes/cabecera2.png">
+            </div>
+            <h1 class="h1-v2">¡CONFIRMA TU RESERVA EN <span class="azul">SAFATEL</span>!</h1>
+            <h1 class="h1-v3">¡ESTÁS A UN PASO DE ASEGURAR TU ESTANCIA! POR FAVOR, REVISA LOS DETALLES DE TU RESERVA Y COMPLETA EL PAGO PARA CONFIRMAR TU HABITACIÓN</h1>
+            <div class="reserva">
+                <div class="datos-reserva">
+                    <div class="container2">
+                        <h1 class="h1-v4">Resumen de la reserva</h1>
+                        <h2>Hotel: <span>[Nombre del Hotel]</span></h2>
+                        <h2>Ubicación: <span>[Ciudad, País]</span></h2>
+                        <h2>Fechas: <span>[Fecha de Check-in] </span> - <span>[Fecha de Check-out]</span></h2>
+                        <h2>Habitación: <span> [Tipo de habitación]</span></h2>
+                        <h2>Número de huéspedes: <span>[Cantidad de personas]</span></h2>
+                    </div>
+                    <div class="container2">
+                        <h1 class="h1-v4">Precio total</h1>
+                        <h2>Tarifa por noche: <span>[Precio por noche]</span></h2>
+                        <h2>Número de noches: <span>: [Cantidad de noches]</span></h2>
+                        <h2>Impuestos y cargos: <span>[Total impuestos y cargos]</span></h2>
+                        <h2>Descuento aplicado (si corresponde): <span>[Descuento]</span></h2>
+                        <h2>Total a pagar: <span> [Precio final]</span></h2>
+                    </div>
+                </div>
+                <div class="metodo-de-pago">
+                    <h1 class="h1-v4">Método de pago</h1>
+                    
+                    <!-- Contenedor principal con borde -->
+                    <div class="container border mt-3 p-3">
+                      
+                      <!-- Opción TARJETA -->
+                      <div class="row2">
+                        <!-- Encabezado con radio + texto TARJETA -->
+                        <div class="col-12 border-bottom pb-2">
+                          <div class="form-check d-flex align-items-center">
+                            <input 
+                              class="form-check-input me-2" 
+                              type="radio" 
+                              name="metodoPago" 
+                              id="radioTarjeta" 
+                              checked
+                            >
+                            <h1 class="h2-v3" for="radioTarjeta">
+                              TARJETA DE CRÉDITO/DÉBITO
+                            </h1>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Campos de la tarjeta (2 columnas x 2 filas) -->
+                      <div class="row pt-3 gx-2 gy-2">
+                        <div class="col-sm-6">
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Nombre del titular"
+                          >
+                        </div>
+                        <div class="col-sm-6">
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="N° de tarjeta"
+                          >
+                        </div>
+                        <div class="col-sm-6">
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Fecha de vencimiento"
+                          >
+                        </div>
+                        <div class="col-sm-6">
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="CVV"
+                          >
+                        </div>
+                      </div>
+                  
+                      <!-- Opción PayPal (borde superior para separarlo) -->
+                      <div class="row border-top mt-3 pt-2">
+                        <div class="col-12">
+                          <div class="form-check d-flex align-items-center">
+                            <input 
+                              class="form-check-input me-2" 
+                              type="radio" 
+                              name="metodoPago" 
+                              id="radioPaypal"
+                            >
+                            <label class="form-check-label" for="radioPaypal">
+                              <!-- Reemplaza con la ruta de tu logo PayPal -->
+                              <img 
+                                src="../imagenes/PayPal.webp" 
+                                alt="PayPal" 
+                                style="width: 100px;"
+                              >
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Opción Bizum (borde superior para separarlo) -->
+                      <div class="row border-top mt-3 pt-2">
+                        <div class="col-12">
+                          <div class="form-check d-flex align-items-center">
+                            <input 
+                              class="form-check-input me-2" 
+                              type="radio" 
+                              name="metodoPago" 
+                              id="radioBizum"
+                            >
+                            <label class="form-check-label" for="radioBizum">
+                              <!-- Reemplaza con la ruta de tu logo Bizum -->
+                              <img 
+                                src="../imagenes/Bizum.svg.png" 
+                                alt="Bizum" 
+                                style="width: 100px;"
+                              >
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                                 
+                <div class="btn-container">
+                    <button class="btn btn-primary" id="crear-cuenta" role="button">CONFIRMAR</button>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const nav = document.querySelector("nav.navbar");
+            const main = document.querySelector("main");
+    
+            function ajustarMargen() {
+              if (nav && main) {
+                  const navHeight = nav.offsetHeight;
+                  main.style.marginTop = `${navHeight}px`;
+              }
+            }
+    
+            ajustarMargen(); // Ajuste inicial
+            window.addEventListener("resize", ajustarMargen); // Ajuste al cambiar tamaño de ventana
+          });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const storedUser = sessionStorage.getItem('user');
+                if (storedUser) {
+                    const user = JSON.parse(storedUser);
+                    const authButtons = document.getElementById('auth-buttons');
+                    const userInfo = document.getElementById('user-info');
+                    const userNameSpan = document.querySelector('.user-name');
+        
+                    // Ocultar el contenedor de autenticación forzadamente
+                    if (authButtons) {
+                        authButtons.style.setProperty('display', 'none', 'important');
+                    }
+        
+                    // Mostrar el contenedor de usuario forzadamente
+                    if (userInfo) {
+                        userInfo.style.setProperty('display', 'flex', 'important');
+                    }
+        
+                    // Actualizar el nombre de usuario
+                    if (userNameSpan) {
+                        userNameSpan.textContent = `${user.nombre} ${user.apellidos}`;
+                    }
+                }
+            });
+        </script>   
+        <script>
+            document.getElementById('crear-cuenta').addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                // Obtener datos del usuario
+                const nombre = document.querySelector('input[name="nombre"]').value.trim();
+                const apellidos = document.querySelector('input[name="apellidos"]').value.trim();
+        
+                if (!nombre || !apellidos) {
+                    alert("Por favor, ingresa tu nombre y apellidos.");
+                    return;
+                }
+        
+                // Guardar datos en sessionStorage
+                const userData = { nombre, apellidos };
+                sessionStorage.setItem('user', JSON.stringify(userData));
+        
+                // Ocultar el contenedor de botones de autenticación usando setProperty
+                const authButtons = document.getElementById('auth-buttons');
+                if (authButtons) {
+                    authButtons.style.setProperty('display', 'none', 'important');
+                }
+        
+                // Mostrar el contenedor de usuario
+                const userInfo = document.getElementById('user-info');
+                if (userInfo) {
+                    userInfo.style.setProperty('display', 'flex', 'important');
+                }
+        
+                // Actualizar el nombre de usuario
+                const userNameSpan = document.querySelector('.user-name');
+                if (userNameSpan) {
+                    userNameSpan.textContent = `${nombre} ${apellidos}`;
+                }
+        
+                // Redirigir a la página principal
+                window.location.href = 'safatel.html';
+            });
+        </script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Selecciona el elemento de log-out dentro de #user-info
+            const logoutBtn = document.querySelector('#user-info .log-out');
+            if (logoutBtn) {
+            logoutBtn.addEventListener('click', function() {
+                // Elimina el usuario del sessionStorage
+                sessionStorage.removeItem('user');
+
+                // Muestra el contenedor de autenticación forzando el estilo display: block !important
+                const authButtons = document.getElementById('auth-buttons');
+                if (authButtons) {
+                authButtons.style.setProperty('display', 'block', 'important');
+                }
+
+                // Oculta el contenedor de usuario forzando el estilo display: none !important
+                const userInfo = document.getElementById('user-info');
+                if (userInfo) {
+                userInfo.style.setProperty('display', 'none', 'important');
+                }
+            });
+            }
+        });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const select = document.querySelector(".select-paises");
+                const flagIcon = document.getElementById("flag-icon");
+
+                function updateFlag() {
+                    const selectedOption = select.options[select.selectedIndex];
+                    const flag = selectedOption.getAttribute("data-flag");
+                    flagIcon.src = `../imagenes/paises/png/${flag}`;
+                }
+
+                select.addEventListener("change", updateFlag);
+                updateFlag(); // Llamar al inicio para mostrar la bandera inicial
+            });
+        </script>
+    </body>
+</html>

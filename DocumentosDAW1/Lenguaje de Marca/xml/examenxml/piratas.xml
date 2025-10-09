@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<!DOCTYPE piratas SYSTEM "../examenxml/piratas.dtd">
+<?xml-stylesheet href="../examenxml/piratas.xslt" type="text/xsl"?>
+
+<piratas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="../examenxml/piratas.xsd">
+    <pirata nombre="Jack Sparrow" imagen="https://static.wikia.nocookie.net/disney/images/9/90/Pirates4JackSparrowPosterCropped.jpg">
+        <datos_actor>
+            <nombre>Johnny</nombre>
+            <apellidos>Deep</apellidos>
+            <sexo>M</sexo>
+            <nacimiento>09-06-1963</nacimiento>
+        </datos_actor>
+        <peliculas>
+            <pelicula>
+                <datos>
+                    <titulo>La maldición de la perla negra</titulo>
+                    <saga>Piratas del Caribe</saga>
+                </datos>
+            </pelicula>
+            <pelicula>
+                <datos>
+                    <titulo>En el fin del mundo</titulo>
+                    <saga>Piratas del Caribe</saga>
+                </datos>
+            </pelicula>
+        </peliculas>
+        <roles>
+            <rol>
+                <tipo_rol>CAPITÁN</tipo_rol>
+                <barco>La Perla Negra</barco>
+            </rol>
+            <rol>
+                <tipo_rol>TRIPULANTE</tipo_rol>
+                <barco>El Holandés Errante</barco>
+            </rol>
+        </roles>
+    </pirata>
+</piratas>

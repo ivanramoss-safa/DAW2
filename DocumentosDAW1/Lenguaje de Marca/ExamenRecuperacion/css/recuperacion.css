@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+header {
+    background-color: #e6e9ed;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 20px 40px;
+    align-items: center;
+    align-content: center;
+}
+
+header div{
+    margin: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 150px;
+}
+
+.logo span {
+    color: #444746;
+    font-size: 22px;
+    line-height: 48px;
+    padding-left: 4px;
+    top: -1.5px;
+    font-family: "Product Sans", Arial, sans-serif;;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    cursor: text;
+    height: 48px; /* Altura fija para evitar cambios */
+    box-sizing: border-box; /* Asegura que el padding no altere las dimensiones */
+}
+
+.placeholder-wrapper img {
+    width: 18px;
+    color: #1f1f1f;
+    margin-right: 10px;
+}
+
+#search-bar {
+    display: none; /* Ocultar el input por defecto */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    color: #555;
+    background: transparent;
+}
+
+#search-bar.visible {
+    display: block; /* Mostrar el input cuando sea necesario */
+}
+
+#search-bar::placeholder {
+    color: transparent; /* Eliminar el texto por defecto del placeholder */
+}
+
+.placeholder-wrapper {
+    display: flex;
+    align-items: center;
+    color: #1f1f1f;
+}
+
+.placeholder-wrapper.hidden {
+    display: none; /* Ocultar el ícono y texto al hacer clic */
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login img{
+    border-radius: 20px;
+    width: 40px;
+}
+
+.login2 {
+    border-radius: 20px;
+    width: 26px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 20fr 1fr;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #000000;
+}
+
+.icon2 {
+    width: 24px;
+    height: 24px;
+    fill: #ea4335;
+}
+
+.icon3 {
+    width: 24px;
+    height: 24px;
+    fill: #4285f4;
+}
+
+.icon-img {
+    width: 26px;
+    height: 26px;
+}
+
+.boton-nuevo {
+    position: relative;
+    display: inline-block;
+}
+
+.boton-nuevo button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 20px;
+    background-color: white;
+    border: 0.1px solid #aaa;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box
+}
+
+.boton-nuevo button:hover {
+    background-color: #0056b3;
+}
+
+.boton-nuevo input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.barra-almacenamiento {
+    position: relative;
+    height: 3px;
+    max-width: 300px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+  
+.barra-llena {
+    height: 100%;
+    background-color: #007bff; /* Color azul para el progreso */
+    transition: width 0.3s ease; /* Animación suave */
+    border-radius: 10px 0 0 10px; /* Esquinas redondeadas solo en la izquierda */
+}
+
+.texto-almacenamiento {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.parte-izquierda {
+    background-color: #e6e9ed;
+    padding: 2% 5%;
+}
+
+.panel-izquierdo > div {
+    padding: 10px 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.parte-izquierda div > span {
+    margin-left: 10px;
+}
+
+.material-symbols-outlined {
+    margin: 0px;
+}
+
+.centro {
+    margin: 5%;
+}
+
+.ultimos-accesos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.encabezados {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.informacion > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.archivo > div {
+    display: flex;
+}

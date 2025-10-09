@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entrada>
+    <evento>FSO - GIRA FÉNIX</evento>
+    <codigo>12114TG4314HJ13413</codigo>
+    <poster>
+        <titulo>FSO FÉNIX LA GIRA</titulo>
+        <descripcion>FILM SYMPHONY ORCHESTRA</descripcion>
+        <subtitulo>LA MEJOR MÚSICA DE CINE EN CONCIERTO</subtitulo>
+        <info_adicional>THE MANDALORIAN - EL SEÑOR DE LOS ANILLOS - EL CID - MULÁN - VIVIR - BRIDGERTON - MATRIX - WEST SIDE STORY - LA BELLA Y LA BESTIA - GLADIATOR - VIDA ES BELLA - Y MUCHO MÁS</info_adicional>
+    </poster>
+    <detalles>
+        <fecha>25/03/2022</fecha>
+        <lugar>Palacio de Congresos</lugar>
+        <ciudad>Sevilla</ciudad>
+        <precio>60,00 €</precio>
+    </detalles>
+    <codigo_barras>
+        <valor>&lt;D1&gt;950&gt;1234567890&lt;3&lt;10&gt;L9390&lt;3&lt;37&gt;220</valor>
+    </codigo_barras>
+</entrada>

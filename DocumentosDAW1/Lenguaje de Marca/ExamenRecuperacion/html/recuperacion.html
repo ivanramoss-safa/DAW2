@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/recuperacion.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=schedule" />
+        <title>Google Drive</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Drive logo">
+                <span>Drive</span>
+            </div>
+            <div class="search-container">
+                <div class="search-bar" onclick="showSearchBar()">
+                    <input 
+                        type="text" 
+                        id="search-bar" 
+                        onblur="hideSearchBar()"
+                        placeholder="Buscar...">
+                    <div class="placeholder-wrapper" id="placeholder">
+                        <img src="../imagenes/search.svg">
+                        <span>Buscar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <img src="../imagenes/login.png">
+            </div>
+        </header>
+        <main>
+            <div class="parte-izquierda">
+                <div class="boton-nuevo">
+                    <button>
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                        <path d="M20 13h-7v7h-2v-7H4v-2h7V4h2v7h7v2z"></path>
+                      </svg>
+                      <span>Nuevo</span>
+                    </button>
+                    <!-- Input para abrir el explorador de archivos -->
+                    <input type="file" />
+                </div>
+                <div class="panel-izquierdo">
+                    <div class="mi-unidad">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9.05 15H15q.275 0 .5-.137.225-.138.35-.363l1.1-1.9q.125-.225.1-.5-.025-.275-.15-.5l-2.95-5.1q-.125-.225-.35-.363Q13.375 6 13.1 6h-2.2q-.275 0-.5.137-.225.138-.35.363L7.1 11.6q-.125.225-.125.5t.125.5l1.05 1.9q.125.25.375.375T9.05 15Zm1.2-3L12 9l1.75 3ZM3 17V4q0-.825.587-1.413Q4.175 2 5 2h14q.825 0 1.413.587Q21 3.175 21 4v13Zm2 5q-.825 0-1.413-.587Q3 20.825 3 20v-1h18v1q0 .825-.587 1.413Q19.825 22 19 22Z"></path>
+                        </svg>
+                        <span>Mi unidad</span>
+                    </div>
+                    <div class="Compartido">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                            <path d="M15,8c0-1.42-0.5-2.73-1.33-3.76C14.09,4.1,14.53,4,15,4c2.21,0,4,1.79,4,4s-1.79,4-4,4c-0.43,0-0.84-0.09-1.23-0.21 c-0.03-0.01-0.06-0.02-0.1-0.03C14.5,10.73,15,9.42,15,8z M16.66,13.13C18.03,14.06,19,15.32,19,17v3h4v-3 C23,14.82,19.42,13.53,16.66,13.13z M9,4c2.21,0,4,1.79,4,4s-1.79,4-4,4s-4-1.79-4-4S6.79,4,9,4z M9,13c2.67,0,8,1.34,8,4v3H1v-3 C1,14.34,6.33,13,9,13z"></path>
+                        </svg>
+                        <span>Compartido</span>
+                    </div>
+                    <div class="Recientes">
+                        <span class="material-symbols-outlined">
+                            schedule
+                        </span>
+                        <span>Recientes</span>
+                    </div>
+                    <div class="Destacada">
+                        <img class="icon-img" src="../imagenes/star_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span>Destacada</span>
+                    </div>
+                    <div class="Spam">
+                        <img class="icon-img" src="../imagenes/report_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span>Spam</span>
+                    </div>
+                    <div class="Papelera">
+                        <img src="../imagenes/delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="icon-img">
+                        <span>Papelera</span>
+                    </div>
+                    <div class="Almacenamiento">
+                        <img src="../imagenes/cloud_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="icon-img">
+                        <span>Almacenamiento</span>
+                    </div>
+                    <div class="barra-almacenamiento">
+                        <div class="barra-llena" style="width: 6.67%;"></div>
+                    </div>
+                    <div class="texto-almacenamiento">1 GB en uso de 15 GB</div>
+                </div>
+            </div>
+            <div class="centro">
+                <h1>Mi unidad</h1>
+                <h2>Últimos accesos</h2>
+                <div class="contenido">
+                    <div class="ultimos-accesos">
+                        <div class="tarejeta1">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z"></path>
+                            </svg>
+                            <div class="titulo-ultima">
+                                <h4>CV 1º DAW</h4>
+                                <p>Última vez • 1:14</p>
+                            </div>
+                        </div>
+                        <div class="tarejeta2">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+                            </svg>
+                            <div class="titulo-ultima">
+                                <h4>proyecto_betis</h4>
+                                <p>Última vez • 10 dic 2024</p>
+                            </div>
+                        </div>
+                        <div class="tarejeta3">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z"></path>
+                            </svg>
+                            <div class="titulo-ultima">
+                                <h4>Práctica 1 PROG</h4>
+                                <p>Última vez • 15 oct 2024</p>
+                            </div>
+                        </div>
+                        <div class="tarejeta4">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+                            </svg>
+                            <div class="titulo-ultima">
+                                <h4>Iván Ramos Villegas</h4>
+                                <p>Última vez • 25 nov 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="archivos">
+                        <div class="encabezados">
+                            <h5>Nombre</h5>
+                            <h5>Propietario</h5>
+                            <h5>Última modificación</h5>
+                            <h5>Tamaño de archivo</h5>
+                        </div>
+                        <div class="informacion">
+                            <div class="archivo">
+                                <div class="nombre">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                        <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+                                    </svg>
+                                    <h5>proyecto_betis</h5>
+                                </div>
+                                <div class="propietario">
+                                    <img class="login2" src="../imagenes/login.png">
+                                    <p>yo</p>
+                                </div>
+                                <div class="ultima-modificacion">
+                                    <p>13 nov 2024 yo</p>
+                                </div>
+                                <div class="Tamaño">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                            <div class="archivo">
+                                <div class="nombre">
+                                    <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.778 0h12.444C15.2 0 16 .8 16 1.778v12.444C16 15.2 15.2 16 14.222 16H1.778C.8 16 0 15.2 0 14.222V1.778C0 .8.8 0 1.778 0zm2.666 7.556h-.888v-.89h.888v.89zm1.334 0c0 .737-.596 1.333-1.334 1.333h-.888v1.778H2.222V5.333h2.222c.738 0 1.334.596 1.334 1.334v.889zm6.666-.89h2.223V5.334H11.11v5.334h1.333V8.889h1.334V7.556h-1.334v-.89zm-2.222 2.667c0 .738-.595 1.334-1.333 1.334H6.667V5.333h2.222c.738 0 1.333.596 1.333 1.334v2.666zm-1.333 0H8V6.667h.889v2.666z"></path>                                    
+                                    </svg>
+                                    <h5>Currículum Iván Ramos Villegas.pdf</h5>
+                                </div>
+                                <div class="propietario">
+                                    <img class="login2" src="../imagenes/login.png">
+                                    <p>yo</p>
+                                </div>
+                                <div class="ultima-modificacion">
+                                    <p>1:14 yo</p>
+                                </div>
+                                <div class="Tamaño">
+                                    <p>118 kB</p>
+                                </div>
+                            </div>
+                            <div class="archivo">
+                                <div class="nombre">
+                                    <svg class="icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 0 .8 0 1.778v12.444C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm-1.769 5.333H3.556V3.556h8.897v1.777zm0 3.556H3.556V7.11h8.897V8.89zm-2.666 3.555H3.556v-1.777h6.23v1.777z"></path>                                    
+                                    </svg>
+                                    <h5>Práctica introductoria Java</h5>
+                                </div>
+                                <div class="propietario">
+                                    <img class="login2" src="../imagenes/login.png">
+                                    <p>yo</p>
+                                </div>
+                                <div class="ultima-modificacion">
+                                    <p>15 ene 2025 yo</p>
+                                </div>
+                                <div class="Tamaño">
+                                    <p>1,6 MB</p>
+                                </div>
+                            </div>
+                            <div class="archivo">
+                                <div class="nombre">
+                                    <svg class="icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 0 .8 0 1.778v12.444C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm-1.769 5.333H3.556V3.556h8.897v1.777zm0 3.556H3.556V7.11h8.897V8.89zm-2.666 3.555H3.556v-1.777h6.23v1.777z"></path>                                    
+                                    </svg>
+                                    <h5>registro_practica.txt</h5>
+                                </div>
+                                <div class="propietario">
+                                    <img class="login2" src="../imagenes/login.png">
+                                    <p>yo</p>
+                                </div>
+                                <div class="ultima-modificacion">
+                                    <p>14 ene 2025 yo</p>
+                                </div>
+                                <div class="Tamaño">
+                                    <p>23 kB</p>
+                                </div>
+                            </div>
+                            <div class="archivo">
+                                <div class="nombre">
+                                    <svg class="icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 0 .8 0 1.778v12.444C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm-1.769 5.333H3.556V3.556h8.897v1.777zm0 3.556H3.556V7.11h8.897V8.89zm-2.666 3.555H3.556v-1.777h6.23v1.777z"></path>                                    
+                                    </svg>
+                                    <h5>Práctica Ubuntu</h5>
+                                </div>
+                                <div class="propietario">
+                                    <img class="login2" src="../imagenes/login.png">
+                                    <p>yo</p>
+                                </div>
+                                <div class="ultima-modificacion">
+                                    <p>14 ene 2025 yo</p>
+                                </div>
+                                <div class="Tamaño">
+                                    <p>1,4 MB</p>
+                                </div>
+                            </div>
+                            <div class="archivo">
+                                <div class="nombre">
+                                    <svg class="icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 0 .8 0 1.778v12.444C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm-1.769 5.333H3.556V3.556h8.897v1.777zm0 3.556H3.556V7.11h8.897V8.89zm-2.666 3.555H3.556v-1.777h6.23v1.777z"></path>                                    
+                                    </svg>
+                                    <h5>IRV - Documentación Almacenamiento de Datos</h5>
+                                </div>
+                                <div class="propietario">
+                                    <img class="login2" src="../imagenes/login.png">
+                                    <p>yo</p>
+                                </div>
+                                <div class="ultima-modificacion">
+                                    <p>17 nov 2024 yo</p>
+                                </div>
+                                <div class="Tamaño">
+                                    <p>15 kB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parte-derecha">
+                <div class="calendar">
+                    <img class="icon-img" src="../imagenes/Google_Calendar_icon_(2020).svg.png">
+                </div>
+                <div class="añadir-notas">
+                    <img class="icon-img" src="../imagenes/keep.png">
+                </div>
+                <div class="tasks">
+                    <img class="icon-img" src="../imagenes/Google_Tasks_2021.svg">
+                </div>
+                <div class="contactos">
+                    <img class="icon-img" src="../imagenes/Google_Contacts_icon_(2022).svg.png">
+                </div>
+                <div class="descargar">
+                    <svg class="icon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                        <path d="M20 13h-7v7h-2v-7H4v-2h7V4h2v7h7v2z"></path>
+                    </svg>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="direccion">
+                <img src="../imagenes/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                <h5>Mountain View, California, Estados Unidos</h5>
+            </div>
+            <div class="redes-sociales">
+                <img src="../imagenes/Instagram_logo_2022.svg">
+                <img src="../imagenes/2021_Facebook_icon.svg.png">
+                <img src="../imagenes/4362958_tiktok_logo_social media_icon.svg">
+            </div>
+        </footer>
+    </body>
+    <script>
+        function showSearchBar() {
+            const input = document.getElementById('search-bar');
+            const placeholder = document.getElementById('placeholder');
+            placeholder.classList.add('hidden');
+            input.classList.add('visible');
+            input.focus();
+        }
+
+        function hideSearchBar() {
+            const input = document.getElementById('search-bar');
+            const placeholder = document.getElementById('placeholder');
+            if (input.value.trim() === '') {
+                input.classList.remove('visible');
+                placeholder.classList.remove('hidden');
+            }
+        }
+    </script>
+</html>

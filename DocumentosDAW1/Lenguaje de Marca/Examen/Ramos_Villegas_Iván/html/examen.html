@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/examen.css">
+    <title>Examen</title>
+</head>
+<header>
+    <div class="logo">
+        <img src="../imagenes/logo1.png">
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Line-up</a></li>
+            <li><a href="">Entradas</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    <button id="comprar-entradas">Comprar entradas</button>
+</header>
+<body>
+    <div class="body">
+        <div class="left">
+            <form>
+                <label for="FAQ"><h3>FAQ</h3></label>
+                <select name="preguntas">
+                    <option value="P1">¿Qué pasaría si no puedo asistir al evento?</option>
+                    <option value="P2">¿Puedo comprar más de una entrada?</option>
+                    <option value="P3">¿Puedo solicitar un reembolso del dinero?</option>
+                </select>
+            </form>
+            <div class="rutas">
+                <img src="../imagenes/iconoLugar.png">
+                <h3>Rutas</h3>
+            </div>
+            <div class="eventos">
+                <img src="../imagenes/calendario.png">
+                <h3>Eventos de hoy</h3>
+            </div>
+            <div class="agenda">
+                <img src="../imagenes/agenda.png">
+                <h3>Agenda de actividades</h3>
+            </div>
+        </div>
+        <div class="center">
+            <div class="tarjeta1">
+                <h1>Festival Internacional de Música Electrónica 2024</h1>
+                <h2>¡Vive la experiencia más electrizante del año!</h2>
+                <button id="descubre-mas">Descubre más</button>
+            </div>
+            <div class="tarjeta2">
+                <h1>Artistas destacados</h1>
+                <div class="artistas">
+                    <img src="../imagenes/dj1.jpg">
+                    <img src="../imagenes/dj2.jpg">
+                    <img src="../imagenes/dj3.jpg">
+                </div>
+            </div>
+            <div class="tarjeta3">
+                <h1>Horarios del festival</h1>
+                <ul>
+                    <li>Día 1: Artista A (8:00 PM)</li>
+                    <li>Día 2: Artista B (9:30 PM)</li>
+                    <li>Día 3: Artista C (7:00 PM)</li>
+                    <li>Día 4: Artista D (9:00 PM)</li>
+                </ul>
+            </div>
+            <div class="tarjeta4">
+                <h1>Contáctanos</h1>
+                <form action="contacto.php">
+                    <div class="datos-personales">
+                        <p>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="nombre" size="30">
+                        </p>
+                        <p>
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" name="correo" size="30">
+                        </p>
+                        <p>
+                            <p>Mensaje</p>
+                            <textarea name="mensaje"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <div class="noticias">
+                <img src="../imagenes/noticias.png">
+                <p>Últimas noticias</p>
+            </div>
+            <div class="suscribirse">
+                <img src="../imagenes/suscribirse.png">
+                <p>Suscripción</p>
+            </div>
+            <div class="aforo">
+            <p>Aforo actual:</p>
+                <img src="../imagenes/almacenamiento.png">
+            </div>
+        </div>
+    </div>
+</body>

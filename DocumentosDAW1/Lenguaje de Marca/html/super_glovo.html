@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/glovo.css">
+    <link rel="preconnect" href="https://fonts.glovoapp.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <title>Super Glovo</title>
+</head>
+<body class="super-glovo">
+    <header class="super-glovo">
+        <div class="store-image">
+            <img src="../imagenes/glovofondo.jpg">
+            <div class="store-image-overlay"></div>
+        </div>
+        <div class="logo">
+            <img src="../imagenes/logo-glovo.png" alt="Glovo Logo">
+        </div>
+        <div></div>
+        <div class="empezar">
+            <button id="empezar">Empezar</button>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <a href="https://glovoapp.com/es/es/sevilla/">Sevilla</a> &gt; 
+            <a href="../html/glovo.html">Supermercado</a> &gt; 
+            <span>El Súper de Glovo</span>
+        </div>
+        <div class="contenido-super">
+            <div class="encabezado-productos">
+                <div class="encabezado">
+                    <div class="informacion">
+                        <h1>El Súper de Glovo</h1>
+                        <div class="detalles">
+                            <div class="precio-entrega2">
+                                <img src="../imagenes/precio-entrega.svg" alt="Precio de entrega:">
+                                <p>1,79 €</p>
+                                <span>GRATIS</span>
+                            </div>
+                            <div class="prime">
+                                <img src="../imagenes/prime.png">
+                                <p>Prime</p>
+                            </div>
+                            <div class="valoraciones2">
+                                <img src="../imagenes/valoraciones2.png">
+                                <p>94%</p>
+                                <span>Muy bueno</span>
+                            </div>
+                        </div>
+                        <p>Te entregamos la compra del súper, ¡en minutos!</p>
+                    </div>
+                </div>
+                <div class="productos">
+                    <div class="secciones">
+                        <a href="../html/super_glovo.html" class="section-link">
+                            <img src="../imagenes/secciones-icono.svg" alt="Secciones Icon">
+                            <p>Secciones</p>
+                        </a>
+                        <aside class="collection">
+                            <ul class="collection__children">
+                                <li class="collection__item">
+                                    <button class="accordion__item__trigger">
+                                        <span>Promociones</span>
+                                    </button>
+                                </li>
+                                <li class="collection__item">
+                                    <button class="accordion__item__trigger">
+                                        <span>Lo más vendido</span>
+                                    </button>
+                                </li>
+                                <li class="collection__item">
+                                    <button class="accordion__item__trigger">
+                                        <span>Navidad</span>
+                                    </button>
+                                </li>
+                                <li class="collection__item">
+                                    <button class="accordion__item__trigger">
+                                        <span>Selección Gourmet</span>
+                                    </button>
+                                </li>
+                                <li class="collection__item">
+                                    <button class="accordion__item__trigger">
+                                        <span>Fruta y Verdura</span>
+                                    </button>
+                                </li>
+                                <li class="collection__item">
+                                    <button class="accordion__item__trigger">
+                                        <span>Platos Preparados</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="productos-disponibles">
+                        <div class="search-container3">
+                            <div class="search-bar3" onclick="showSearchBar3()">
+                                <input 
+                                    type="text" 
+                                    id="search-bar3" 
+                                    onblur="hideSearchBar3()" 
+                                    onkeyup="filterItems3()" 
+                                    placeholder="Buscar...">
+                                <div class="placeholder-wrapper" id="placeholder3">
+                                    <img src="../imagenes/search.svg">
+                                    <span>Buscar en El Súper de Glovo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lo-mas-vendido">
+                            <h2>Lo más vendido</h2>
+                            <div class="productos-list">
+                                <div class="producto1">
+                                    <div class="imagen">
+                                        <div></div>
+                                        <div></div>
+                                        <div class="añadir-producto">
+                                            <img src="../imagenes/añadir-producto.svg">
+                                        </div>
+                                    </div>
+                                    <p class="nom">Cruzcampo Cerveza Botella 6x250ml</p>
+                                    <div class="precio">
+                                        <p class="precio-actual">3,85 €</p>
+                                    </div>
+                                </div>
+                                <div class="producto2">
+                                    <div class="imagen">
+                                        <div></div>
+                                        <div></div>
+                                        <div class="añadir-producto">
+                                            <img src="../imagenes/añadir-producto.svg">
+                                        </div>
+                                    </div>
+                                    <p class="nom">Plátano Canarias 6u</p>
+                                    <div class="precio">
+                                        <p class="precio-actual">4,14 €</p>
+                                    </div>
+                                </div>
+                                <div class="producto3">
+                                    <div class="imagen">
+                                        <div></div>
+                                        <div></div>
+                                        <div class="añadir-producto">
+                                            <img src="../imagenes/añadir-producto.svg">
+                                        </div>
+                                    </div>
+                                    <p class="nom">Pack 6x Estrella Galicia Cerveza Lata 330ml</p>
+                                    <div class="precio">
+                                        <p class="precio-actual">5.94 €</p>
+                                    </div>
+                                </div>
+                                <div class="producto4">
+                                    <div class="imagen">
+                                        <div></div>
+                                        <div></div>
+                                        <div class="añadir-producto">
+                                            <img src="../imagenes/añadir-producto.svg">
+                                        </div>
+                                    </div>
+                                    <p class="nom">Pechuga Pollo Fileteada 400g</p>
+                                    <div class="precio">
+                                        <p class="precio-actual">4,25 €</p>
+                                    </div>
+                                </div>
+                                <div class="producto5">
+                                    <div class="imagen">
+                                        <div class="descuento">
+                                            <span>-5%</span>
+                                        </div>
+                                        <div></div>
+                                        <div class="añadir-producto">
+                                            <img src="../imagenes/añadir-producto.svg">
+                                        </div>
+                                    </div>
+                                    <p class="nom">Casa Forner Pechuga de Pavo en Lonchas Artesanas 100g</p>
+                                    <div class="precio">
+                                        <p class="precio-actual">3,66 €</p>
+                                        <p class="precio-original">3,85 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tu-glovo">
+                <h2>Tu glovo</h2>
+                <img src="../imagenes/astronauta.svg">
+                <p>Todavía no has añadido ningún producto. Cuando lo hagas, ¡verás los productos aquí!</p>
+                <div class="recargo">
+                    <button class="mbs" style="--background-colour: var(--helio-color-primaryBackground);">
+                        <div class="progress-bar" aria-label="0" style="--percentage-color: #00A082; --background-color: #E9F8F5; --percentage: 0%;">
+                            <div class="progress-bar__percentage"></div>
+                        </div>
+                        <span class="mbs__message">
+                            <span>¡Llega a <b>15,00&nbsp;€</b> para no pagar el recargo de <b><span class="verde">2,99&nbsp;€</span></b>!</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function showSearchBar3() {
+            const input = document.getElementById('search-bar3');
+            const placeholder = document.getElementById('placeholder3');
+            placeholder.classList.add('hidden');
+            input.classList.add('visible');
+            input.focus();
+        }
+
+        function hideSearchBar3() {
+            const input = document.getElementById('search-bar3');
+            const placeholder = document.getElementById('placeholder3');
+            if (input.value.trim() === '') {
+                input.classList.remove('visible');
+                placeholder.classList.remove('hidden');
+                resetItems(); // Vuelve al estado original
+            }
+        }
+
+        function normalizeText(text) {
+            // Normaliza el texto eliminando tildes y otros caracteres especiales
+            return text.normalize('NFD').replace(/\p{Diacritic}/gu, '');
+        }
+
+        function highlightText(element, searchInput) {
+            const regex = new RegExp(`(${searchInput})`, 'gi');
+            element.innerHTML = element.textContent.replace(regex, '<span style="background-color: #ffc244; border-radius: 4px; padding: 0 2px;">$1</span>');
+        }
+
+        function resetItems() {
+            const items = document.querySelectorAll('.productos-list > div');
+            const productosList = document.querySelector('.productos-list');
+
+            productosList.style.gridTemplateColumns = 'repeat(auto-fit, minmax(150px, 1fr))';
+            removeStyles(); // Elimina estilos adicionales
+
+            items.forEach(item => {
+                const textElement = item.querySelector('div p');
+                item.style.display = '';
+                textElement.innerHTML = textElement.textContent; // Elimina el resaltado
+            });
+        }
+
+        function filterItems3() {
+            const searchInput = normalizeText(document.getElementById('search-bar3').value.toLowerCase());
+            const items = document.querySelectorAll('.productos-list > div');
+            const productosList = document.querySelector('.productos-list');
+
+            if (searchInput.trim() !== '') {
+                productosList.style.gridTemplateColumns = '1fr 1fr';
+                applyStyles(); // Aplica estilos adicionales
+                productosList.classList.add('search-active'); // Clase para el media query
+            } else {
+                productosList.classList.remove('search-active'); // Eliminar la clase de búsqueda
+                resetItems();
+                return;
+            }
+
+            items.forEach(item => {
+                const textElement = item.querySelector('div p');
+                const text = normalizeText(textElement.textContent.toLowerCase());
+                if (text.includes(searchInput)) {
+                    item.style.display = '';
+                    highlightText(textElement, searchInput);
+                } else {
+                    item.style.display = 'none';
+                    textElement.innerHTML = textElement.textContent; // Elimina el resaltado si no coincide
+                }
+            });
+        }
+
+        function applyStyles() {
+            let style = document.getElementById('dynamic-styles');
+            if (!style) {
+                style = document.createElement('style');
+                style.id = 'dynamic-styles';
+                document.head.appendChild(style);
+            }
+            style.innerHTML = `
+                .productos-list > div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    max-width: initial;
+                    text-align: left;
+                    height: 182px;
+                    padding: 16px 12px;
+                    border: 1px solid #E4E4E4FF;
+                    border-radius: 8px;
+                    transition: transform .2s ease;
+                    width: 95%;
+                }
+
+                .imagen {
+                    height: 150px;
+                    width: 120px;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    margin-right: 10px;
+                    background-position: center;
+                    border-radius: 8px;
+                    border: 1px solid #E4E4E4FF;
+                    padding: 5px 20px;
+                }
+
+                .añadir-producto {
+                    left: 20px;
+                    position: relative;
+                }
+
+                .productos-list > div p.nom {
+                    display: block;
+                    margin-bottom: 3px;
+                    max-width: 150px;
+                }
+
+                .precio {
+                    display: flex;
+                    align-items: center;
+                    gap: 0;
+                    width: -webkit-fill-available;
+                    max-width: 60px;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                }
+
+                .descuento {
+                    align-self: flex-start;
+                    justify-self: flex-start;
+                    margin-top: 11px;
+                    margin-left: 0;
+                    position: relative;
+                    left: -10px;
+                }
+            `;
+        }
+
+        function removeStyles() {
+            const style = document.getElementById('dynamic-styles');
+            if (style) {
+                style.remove();
+            }
+        }
+
+        const goalAmount = 15; // Meta total (15€)
+
+        // Actualiza la barra de progreso
+        function updateProgressBar() {
+            const selectedItems = document.querySelectorAll('.tu-glovo .cart-item');
+            let total = 0;
+
+            // Sumar los precios de los productos seleccionados
+            selectedItems.forEach(item => {
+                const priceElement = item.querySelector('.precio p.precio-actual');
+                if (priceElement) {
+                    const priceText = priceElement.textContent.replace('€', '').replace(',', '.').trim();
+                    const price = parseFloat(priceText);
+                    if (!isNaN(price)) {
+                        total += price;
+                    }
+                }
+            });
+
+            // Calcular el porcentaje
+            const percentage = Math.min((total / 15) * 100, 100);
+            const progressBar = document.querySelector('.progress-bar__percentage');
+            const progressBarContainer = document.querySelector('.progress-bar');
+            const messageContainer = document.querySelector('.mbs__message span');
+
+            // Actualizar el ancho de la barra según el porcentaje
+            progressBar.style.width = `${percentage}%`;
+
+            if (total >= 15) {
+                // Si hemos alcanzado o superado 15€, muestra el mensaje de ahorro
+                messageContainer.innerHTML = `<span>🎉 ¡Toma! ¡Ahorras <b>2,99&nbsp;€</b>!</span>`;
+                setTimeout(() => {
+                    progressBarContainer.style.transition = "opacity 1s ease";
+                    progressBarContainer.style.opacity = 0;
+
+                    messageContainer.parentElement.style.transition = "opacity 1s ease";
+                    messageContainer.parentElement.style.opacity = 0;
+
+                    setTimeout(() => {
+                        progressBarContainer.style.opacity = 1;
+                        progressBarContainer.style.width = '0%';
+                        progressBarContainer.style.transition = "";
+                        messageContainer.parentElement.style.opacity = 1;
+                    }, 1000); // Restaurar visibilidad
+                }, 5000);
+            } else {
+                // Si el total es menor a 15€, actualiza el mensaje
+                const remaining = (15 - total).toFixed(2).replace('.', ',');
+                messageContainer.innerHTML = `¡Llega a <b>${remaining}&nbsp;€</b> para no pagar el recargo de <b><span class="verde">2,99&nbsp;€</span></b>!`;
+
+                // Asegúrate de que el mensaje y la barra sean visibles
+                progressBarContainer.style.opacity = 1;
+                messageContainer.parentElement.style.opacity = 1;
+            }
+        }
+
+        function addProductToCart(product) {
+            const tuGlovo = document.querySelector('.tu-glovo');
+            const recargoDiv = document.querySelector('.recargo');
+            const productName = product.querySelector('.nom').textContent.trim();
+
+            // Eliminar imagen y mensaje inicial si están presentes
+            const emptyMessage = tuGlovo.querySelector('.tu-glovo > p');
+            const astronautImage = tuGlovo.querySelector('.tu-glovo > img');
+            if (emptyMessage) emptyMessage.remove();
+            if (astronautImage) astronautImage.remove();
+
+            // Buscar si el producto ya está en el carrito
+            const existingProduct = Array.from(tuGlovo.querySelectorAll('.cart-item'))
+                .find(item => item.querySelector('.nom').textContent.trim() === productName);
+
+            const unitPrice = parseFloat(product.querySelector('.precio-actual').textContent.replace('€', '').replace(',', '.').trim());
+
+            if (existingProduct) {
+                // Simular comportamiento del botón "añadir" si el producto ya existe
+                const addButton = existingProduct.querySelector('.boton-añadir');
+                addButton.click(); // Simula un clic en el botón "añadir"
+            } else {
+                // Si el producto no existe, crear uno nuevo en el carrito
+                const productClone = product.cloneNode(true);
+                productClone.classList.add('cart-item');
+
+                productClone.innerHTML = `
+                    <div class="productos-carta">
+                        <p class="numero-producto">1x</p>
+                        <p class="nom">${productName}</p>
+                        <div class="precio">
+                            <p class="precio-actual">${unitPrice.toFixed(2).replace('.', ',')} €</p>
+                        </div>
+                    </div>
+                    <div class="descuento-precio">
+                        <div></div>
+                        <!-- Si el producto tiene descuento, renderiza aquí -->
+                        ${product.querySelector('.descuento') ? product.querySelector('.descuento').outerHTML.replace('</div>', '<div class="etiqueta-flecha"></div></div>') : ''}
+                        <!-- Si el producto tiene precio original, renderiza aquí -->
+                        ${product.querySelector('.precio-original') ? product.querySelector('.precio-original').outerHTML : ''}
+                    </div>
+                    <div class="botones-añadir-borrar">
+                        <button class="boton-borrar">
+                            <img src="../imagenes/borrar-producto.svg">
+                        </button>
+                        <div></div>
+                        <button class="boton-añadir">
+                            <img src="../imagenes/boton-agregar.svg">
+                        </button>
+                    </div>
+                `;
+
+                tuGlovo.insertBefore(productClone, recargoDiv);
+
+                // Configurar botones del nuevo producto
+                setupCartButtons(productClone, unitPrice);
+            }
+
+            // Actualizar la barra de progreso
+            updateProgressBar();
+            updateOrderButton(); // Asegura que el botón aparezca
+        }
+
+        function setupCartButtons(productElement, unitPrice) {
+            const quantityElem = productElement.querySelector('.numero-producto');
+            const addButton = productElement.querySelector('.boton-añadir');
+            const removeButton = productElement.querySelector('.boton-borrar');
+            const priceElem = productElement.querySelector('.precio-actual');
+
+            // Botón añadir: incrementar cantidad y actualizar precio
+            addButton.addEventListener('click', () => {
+                let quantity = parseInt(quantityElem.textContent);
+                quantity += 1;
+                quantityElem.textContent = `${quantity}x`;
+
+                const newPrice = (unitPrice * quantity).toFixed(2).replace('.', ',');
+                priceElem.textContent = `${newPrice} €`;
+
+                updateProgressBar();
+                updateOrderButton();
+            });
+
+            // Botón borrar: reducir cantidad o eliminar producto
+            removeButton.addEventListener('click', () => {
+                let quantity = parseInt(quantityElem.textContent);
+                if (quantity > 1) {
+                    quantity -= 1;
+                    quantityElem.textContent = `${quantity}x`;
+
+                    const newPrice = (unitPrice * quantity).toFixed(2).replace('.', ',');
+                    priceElem.textContent = `${newPrice} €`;
+                } else {
+                    productElement.remove();
+                }
+
+                // Verificar si el carrito está vacío
+                if (document.querySelectorAll('.tu-glovo .cart-item').length === 0) {
+                    restoreInitialState();
+                }
+
+                updateProgressBar();
+                updateOrderButton();
+            });
+        }
+
+
+        // Configuración de la selección de productos
+        function setupProductSelection() {
+            const products = document.querySelectorAll('.productos-list > div');
+
+            products.forEach(product => {
+                product.addEventListener('click', () => {
+                    // Añadir producto al carrito o aumentar cantidad si ya existe
+                    addProductToCart(product);
+                });
+            });
+        }
+
+        // Eliminar productos de "Tu glovo"
+        function removeProductFromCart(product) {
+            const tuGlovo = document.querySelector('.tu-glovo');
+            const cartItems = tuGlovo.querySelectorAll('.cart-item');
+
+            cartItems.forEach(cartItem => {
+                if (cartItem.querySelector('.nom').textContent === product.querySelector('.nom').textContent) {
+                    cartItem.remove();
+                }
+            });
+
+            // Verificar si el carrito está vacío y restaurar el estado inicial si es necesario
+            const remainingItems = tuGlovo.querySelectorAll('.cart-item');
+            if (remainingItems.length === 0) {
+                restoreInitialState(); // Llamar a restoreInitialState cuando no haya productos
+            }
+
+            // Actualizar la barra de progreso después de eliminar un producto
+            updateProgressBar();
+        }
+
+        function restoreInitialState() {
+            const tuGlovo = document.querySelector('.tu-glovo');
+            const recargoDiv = document.querySelector('.recargo'); // Referencia al div de recargo
+
+            // Verificar si ya existe la imagen o el mensaje inicial
+            const existingImage = tuGlovo.querySelector('img[alt="Imagen inicial"]');
+            const existingMessage = tuGlovo.querySelector('p');
+
+            if (existingImage || existingMessage) {
+                // Si ya existen, salir de la función
+                return;
+            }
+
+            // Restaurar la imagen del astronauta
+            const astronautImage = document.createElement('img');
+            astronautImage.src = '../imagenes/astronauta.svg';
+            astronautImage.alt = 'Imagen inicial';
+
+            // Restaurar el mensaje inicial
+            const emptyMessage = document.createElement('p');
+            emptyMessage.textContent = 'Todavía no has añadido ningún producto. Cuando lo hagas, ¡verás los productos aquí!';
+            emptyMessage.style.textAlign = 'center';
+
+            // Insertar la imagen y el mensaje justo antes del div de recargo
+            tuGlovo.insertBefore(astronautImage, recargoDiv);
+            tuGlovo.insertBefore(emptyMessage, recargoDiv);
+        }
+
+        // Variable global para controlar si se puede ocultar el mensaje
+        let canHideMessage = false;
+        let hideTimeout; // Timeout para la animación de desaparición
+
+        function updateProgressBar() {
+            const selectedItems = document.querySelectorAll('.tu-glovo .cart-item');
+            let total = 0;
+
+            // Sumar los precios de los productos seleccionados
+            selectedItems.forEach(item => {
+                const priceElement = item.querySelector('.precio p.precio-actual');
+                if (priceElement) {
+                    const priceText = priceElement.textContent.replace('€', '').replace(',', '.').trim();
+                    const price = parseFloat(priceText);
+                    if (!isNaN(price)) {
+                        total += price;
+                    }
+                }
+            });
+
+            // Calcular el porcentaje
+            const percentage = Math.min((total / goalAmount) * 100, 100);
+            let progressBar = document.querySelector('.progress-bar__percentage');
+            let progressBarContainer = document.querySelector('.progress-bar');
+            const messageParent = document.querySelector('.mbs__message');
+            let message = document.querySelector('.mbs__message span');
+
+            // Si la barra o el mensaje ya fueron eliminados, recrearlos
+            if (!progressBarContainer) {
+                const recargoDiv = document.querySelector('.recargo');
+                progressBarContainer = document.createElement('div');
+                progressBarContainer.className = 'progress-bar';
+                progressBarContainer.style = "--percentage-color: #00A082; --background-color: #E9F8F5;";
+                progressBarContainer.innerHTML = `<div class="progress-bar__percentage" style="width: 0%;"></div>`;
+                recargoDiv.prepend(progressBarContainer);
+                progressBar = progressBarContainer.querySelector('.progress-bar__percentage');
+            }
+
+            if (!message) {
+                message = document.createElement('span');
+                messageParent.appendChild(message);
+            }
+
+            // Actualizar el ancho de la barra según el porcentaje
+            progressBar.style.width = `${percentage}%`;
+
+            if (total >= goalAmount) {
+                const existingImgMessage = document.querySelector('.mbs__info-icon');
+
+                if (existingImgMessage) {
+                    existingImgMessage.remove(); // Eliminar la imagen antes de actualizar el mensaje
+                }
+
+                message.innerHTML = `<span>🎉 ¡Toma! ¡Ahorras <b class:"verde">2,99&nbsp;€</b>!</span>`;
+                canHideMessage = true;
+
+                // Reiniciar el timeout si ya había uno en curso
+                if (hideTimeout) clearTimeout(hideTimeout);
+
+                // Ocultar el mensaje después de 5 segundos
+                hideTimeout = setTimeout(() => {
+                    if (canHideMessage) {
+                        progressBarContainer.style.transition = "opacity 1s ease";
+                        progressBarContainer.style.opacity = 0;
+
+                        messageParent.style.transition = "opacity 1s ease";
+                        messageParent.style.opacity = 0;
+
+                        setTimeout(() => {
+                            if (canHideMessage) {
+                                progressBarContainer.remove();
+                                message.remove();
+                            }
+                        }, 1000); // Eliminar después de la animación
+                    }
+                }, 5000);
+
+            } else {
+                // Si el total baja de 15 €, cancelar cualquier ocultación y restaurar el mensaje
+                canHideMessage = false;
+
+                if (hideTimeout) clearTimeout(hideTimeout);
+
+                const remaining = (goalAmount - total).toFixed(2).replace('.', ',');
+                message.innerHTML = `
+                    <span class="mbs__message" style="opacity: 1;  padding: 0; margin-top: 12px;">
+                        <img alt="ℹ️" height="14" width="14" src="../imagenes/info.svg" class="mbs__info-icon"> 
+                        <span>
+                            ¡Llega a <b>${remaining}&nbsp;€</b> para no pagar el recargo de <b><span class="verde">2,99&nbsp;€</span></b>!
+                        </span>
+                    </span>
+                `;
+                progressBarContainer.style.opacity = 1;
+                messageParent.style.opacity = 1;
+            }
+        }
+
+        function updateOrderButton() {
+            const selectedItems = document.querySelectorAll('.tu-glovo .cart-item');
+            const recargoDiv = document.querySelector('.recargo');
+            let totalQuantity = 0;
+            let totalPrice = 0;
+
+            // Recorrer los productos en el carrito
+            selectedItems.forEach(item => {
+                // Leer el número de productos en `.numero-producto`
+                const quantityText = item.querySelector('.numero-producto')?.textContent.trim() || "0x";
+                const quantity = parseInt(quantityText.replace("x", "").trim(), 10); // Extraer el número
+                if (!isNaN(quantity)) {
+                    totalQuantity += quantity; // Incrementar la cantidad total
+                }
+
+                // Leer el precio actual desde `.precio-actual`
+                const priceElement = item.querySelector('.precio-actual');
+                if (priceElement) {
+                    const priceText = priceElement.textContent.replace('€', '').replace(',', '.').trim();
+                    const price = parseFloat(priceText);
+                    if (!isNaN(price)) {
+                        totalPrice += price; // Sumar el precio actual al total
+                    }
+                }
+            });
+
+            // Buscar el botón si ya existe
+            let orderButton = document.querySelector('.order-button');
+
+            if (totalQuantity > 0) {
+                // Crear el botón si no existe
+                if (!orderButton) {
+                    orderButton = document.createElement('button');
+                    orderButton.className = 'order-button'; // Clase identificadora del botón
+                    recargoDiv.insertAdjacentElement('afterend', orderButton);
+                }
+
+                // Actualizar el contenido del botón
+                orderButton.innerHTML = `
+                    <span class="button-pedir">
+                        Pide ${totalQuantity} por ${totalPrice.toFixed(2).replace('.', ',')}&nbsp;€
+                    </span>
+                `;
+            } else {
+                // Si no hay productos en el carrito, eliminar el botón
+                if (orderButton) {
+                    orderButton.remove();
+                }
+            }
+        }
+
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            setupProductSelection();
+            updateProgressBar(); // Estado inicial
+        });
+    </script>
+</body>

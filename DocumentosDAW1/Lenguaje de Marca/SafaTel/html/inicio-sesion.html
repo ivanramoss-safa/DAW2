@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/safatel.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <title>SafaTel</title>
+    </head>
+    <body>
+        <header>
+          <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <a class="navbar-brand" href="../html/safatel.html">
+                    <img src="../imagenes/SafaTel.png">
+                </a>
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/safatel.html">inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/hoteles.html">hoteles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ofertas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">¿quiénes somos?</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">acerca de</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 d-md-block" id="auth-buttons">
+                  <a class="btn btn-primary" href="../html/inicio-sesion.html" role="button">REGISTRARSE</a>
+                  <a class="btn btn-primary" href="../html/inicio-sesion2.html" role="button">INICIAR SESIÓN</a>
+                </div>
+                <div id="user-info" class="hidden-element">
+                    <img class="icono-cuenta" src="../imagenes/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                    <span class="user-name"></span>
+                    <img class="log-out" src="../imagenes/logout_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                </div>
+              </nav>
+            </div>
+        </header>
+        <main>
+            <div class="banner">
+              <img src="../imagenes/cabecera2.png">
+            </div>
+            <h1 class="h1-v2">¡ÚNETE A <span class="azul">SAFATEL</span>!</h1>
+            <h1 class="h1-v3">Regístrate, activa tu cuenta y empieza a disfrutar de ventajas exclusivas</h1>
+            <div class="datos-personales">
+                <h1 class="h1-v4">Datos personales</h1>
+                <div class="container">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="apellidos" placeholder="Apellidos" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" name="repetir_email" placeholder="Repetir email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" name="confirmar_contrasena" placeholder="Confirmar contraseña" required>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select" name="nacionalidad" required>
+                                <option value="" disabled selected>Nacionalidad</option>
+                                <option value="es">España</option>
+                                <option value="mx">México</option>
+                                <option value="ar">Argentina</option>
+                                <option value="co">Colombia</option>
+                                <option value="us">Estados Unidos</option>
+                                <option value="ca">Canadá</option>
+                                <option value="br">Brasil</option>
+                                <option value="fr">Francia</option>
+                                <option value="de">Alemania</option>
+                                <option value="it">Italia</option>
+                                <option value="jp">Japón</option>
+                                <option value="cn">China</option>
+                                <option value="in">India</option>
+                                <option value="ru">Rusia</option>
+                                <option value="gb">Reino Unido</option>
+                                <option value="au">Australia</option>
+                                <option value="za">Sudáfrica</option>
+                                <option value="eg">Egipto</option>
+                                <option value="ng">Nigeria</option>
+                                <option value="kr">Corea del Sur</option>
+                                <option value="sa">Arabia Saudita</option>
+                                <option value="tr">Turquía</option>
+                                <option value="nl">Países Bajos</option>
+                                <option value="se">Suecia</option>
+                                <option value="ch">Suiza</option>
+                                <option value="be">Bélgica</option>
+                                <option value="at">Austria</option>
+                                <option value="dk">Dinamarca</option>
+                                <option value="no">Noruega</option>
+                                <option value="fi">Finlandia</option>
+                                <option value="ie">Irlanda</option>
+                                <option value="pt">Portugal</option>
+                                <option value="gr">Grecia</option>
+                                <option value="pl">Polonia</option>
+                                <option value="cz">República Checa</option>
+                                <option value="hu">Hungría</option>
+                                <option value="ro">Rumanía</option>
+                                <option value="bg">Bulgaria</option>
+                                <option value="hr">Croacia</option>
+                                <option value="si">Eslovenia</option>
+                                <option value="sk">Eslovaquia</option>
+                                <option value="lt">Lituania</option>
+                                <option value="lv">Letonia</option>
+                                <option value="ee">Estonia</option>
+                                <option value="ua">Ucrania</option>
+                                <option value="by">Bielorrusia</option>
+                                <option value="il">Israel</option>
+                                <option value="ae">Emiratos Árabes Unidos</option>
+                                <option value="sg">Singapur</option>
+                                <option value="my">Malasia</option>
+                                <option value="th">Tailandia</option>
+                                <option value="id">Indonesia</option>
+                                <option value="ph">Filipinas</option>
+                                <option value="nz">Nueva Zelanda</option>
+                                <option value="cl">Chile</option>
+                                <option value="pe">Perú</option>
+                                <option value="ve">Venezuela</option>
+                                <option value="uy">Uruguay</option>
+                                <option value="py">Paraguay</option>
+                                <option value="bo">Bolivia</option>
+                                <option value="ec">Ecuador</option>
+                                <option value="cu">Cuba</option>
+                                <option value="do">República Dominicana</option>
+                                <option value="gt">Guatemala</option>
+                                <option value="hn">Honduras</option>
+                                <option value="sv">El Salvador</option>
+                                <option value="ni">Nicaragua</option>
+                                <option value="cr">Costa Rica</option>
+                                <option value="pa">Panamá</option>
+                                <option value="jm">Jamaica</option>
+                                <option value="tt">Trinidad y Tobago</option>
+                                <option value="bb">Barbados</option>
+                                <option value="bs">Bahamas</option>
+                                <option value="bz">Belice</option>
+                                <option value="gy">Guyana</option>
+                                <option value="sr">Surinam</option>
+                                <option value="gy">Guayana Francesa</option>
+                                <option value="fo">Islas Feroe</option>
+                                <option value="gl">Groenlandia</option>
+                                <option value="is">Islandia</option>
+                                <option value="mt">Malta</option>
+                                <option value="cy">Chipre</option>
+                                <option value="lu">Luxemburgo</option>
+                                <option value="mc">Mónaco</option>
+                                <option value="sm">San Marino</option>
+                                <option value="li">Liechtenstein</option>
+                                <option value="va">Ciudad del Vaticano</option>
+                                <option value="ad">Andorra</option>
+                                <option value="al">Albania</option>
+                                <option value="mk">Macedonia del Norte</option>
+                                <option value="me">Montenegro</option>
+                                <option value="rs">Serbia</option>
+                                <option value="ba">Bosnia y Herzegovina</option>
+                                <option value="xk">Kosovo</option>
+                                <option value="am">Armenia</option>
+                                <option value="az">Azerbaiyán</option>
+                                <option value="ge">Georgia</option>
+                                <option value="kz">Kazajistán</option>
+                                <option value="uz">Uzbekistán</option>
+                                <option value="tm">Turkmenistán</option>
+                                <option value="kg">Kirguistán</option>
+                                <option value="tj">Tayikistán</option>
+                                <option value="mn">Mongolia</option>
+                                <option value="np">Nepal</option>
+                                <option value="bt">Bután</option>
+                                <option value="lk">Sri Lanka</option>
+                                <option value="mv">Maldivas</option>
+                                <option value="bd">Bangladesh</option>
+                                <option value="pk">Pakistán</option>
+                                <option value="af">Afganistán</option>
+                                <option value="ir">Irán</option>
+                                <option value="iq">Irak</option>
+                                <option value="sy">Siria</option>
+                                <option value="lb">Líbano</option>
+                                <option value="jo">Jordania</option>
+                                <option value="kw">Kuwait</option>
+                                <option value="qa">Catar</option>
+                                <option value="bh">Baréin</option>
+                                <option value="om">Omán</option>
+                                <option value="ye">Yemen</option>
+                                <option value="ps">Palestina</option>
+                                <option value="sd">Sudán</option>
+                                <option value="ss">Sudán del Sur</option>
+                                <option value="ly">Libia</option>
+                                <option value="tn">Túnez</option>
+                                <option value="dz">Argelia</option>
+                                <option value="ma">Marruecos</option>
+                                <option value="mr">Mauritania</option>
+                                <option value="sn">Senegal</option>
+                                <option value="gm">Gambia</option>
+                                <option value="gw">Guinea-Bisáu</option>
+                                <option value="gn">Guinea</option>
+                                <option value="sl">Sierra Leona</option>
+                                <option value="lr">Liberia</option>
+                                <option value="ci">Costa de Marfil</option>
+                                <option value="gh">Ghana</option>
+                                <option value="tg">Togo</option>
+                                <option value="bj">Benín</option>
+                                <option value="bf">Burkina Faso</option>
+                                <option value="ne">Níger</option>
+                                <option value="ml">Mali</option>
+                                <option value="td">Chad</option>
+                                <option value="cm">Camerún</option>
+                                <option value="cf">República Centroafricana</option>
+                                <option value="gq">Guinea Ecuatorial</option>
+                                <option value="ga">Gabón</option>
+                                <option value="cg">República del Congo</option>
+                                <option value="cd">República Democrática del Congo</option>
+                                <option value="ao">Angola</option>
+                                <option value="na">Namibia</option>
+                                <option value="bw">Botsuana</option>
+                                <option value="zm">Zambia</option>
+                                <option value="zw">Zimbabue</option>
+                                <option value="mw">Malaui</option>
+                                <option value="mz">Mozambique</option>
+                                <option value="mg">Madagascar</option>
+                                <option value="mu">Mauricio</option>
+                                <option value="sc">Seychelles</option>
+                                <option value="re">Reunión (Francia)</option>
+                                <option value="km">Comoras</option>
+                                <option value="yt">Mayotte (Francia)</option>
+                                <option value="cv">Cabo Verde</option>
+                                <option value="st">Santo Tomé y Príncipe</option>
+                                <option value="er">Eritrea</option>
+                                <option value="dj">Yibuti</option>
+                                <option value="so">Somalia</option>
+                                <option value="et">Etiopía</option>
+                                <option value="ke">Kenia</option>
+                                <option value="ug">Uganda</option>
+                                <option value="rw">Ruanda</option>
+                                <option value="bi">Burundi</option>
+                                <option value="tz">Tanzania</option>
+                                <option value="ls">Lesoto</option>
+                                <option value="sz">Esuatini (Suazilandia)</option>
+                                <option value="tg">Togo</option>
+                                <option value="cv">Cabo Verde</option>                        
+                            </select>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="me-2" style="width: 30%; position: relative;">
+                                <img id="flag-icon" src="../imagenes/paises/png/001-espana.png" alt="Bandera" 
+                                     style="position: absolute; left: 15px; top: 30px; transform: translateY(-50%); width: 24px; filter: contrast(1.2) sharpen(1.5);">
+                                
+                                <select class="form-select select-paises" name="codigo_pais" style="padding-left: 45px; padding-right: 0px;">
+                                    <option value="+34" data-flag="001-espana.png">+34</option>
+                                    <option value="+52" data-flag="002-mexico.png">+52</option>
+                                    <option value="+44" data-flag="003-reino-unido.png">+44</option>
+                                    <option value="+55" data-flag="004-brasil.png">+55</option>
+                                    <option value="+57" data-flag="005-colombia.png">+57</option>
+                                    <option value="+56" data-flag="006-chile.png">+56</option>
+                                    <option value="+33" data-flag="007-francia.png">+33</option>
+                                    <option value="+971" data-flag="008-emiratos-arabes-unidos.png">+971</option>
+                                    <option value="+86" data-flag="009-china.png">+86</option>
+                                    <option value="+502" data-flag="010-guatemala.png">+502</option>
+                                    <option value="+51" data-flag="011-peru.png">+51</option>
+                                    <option value="+886" data-flag="012-taiwan.png">+886</option>
+                                    <option value="+63" data-flag="013-filipino.png">+63</option>
+                                    <option value="+351" data-flag="014-portugal.png">+351</option>
+                                    <option value="+1" data-flag="015-estados-unidos.png">+1</option>
+                                    <option value="+251" data-flag="016-etiopia.png">+251</option>
+                                    <option value="+84" data-flag="017-vietnam.png">+84</option>
+                                    <option value="+855" data-flag="018-camboya.png">+855</option>
+                                    <option value="+212" data-flag="019-marruecos.png">+212</option>
+                                    <option value="+595" data-flag="020-paraguay.png">+595</option>
+                                    <option value="+598" data-flag="021-uruguay.png">+598</option>
+                                    <option value="+61" data-flag="022-australia.png">+61</option>
+                                    <option value="+64" data-flag="023-nueva-zelanda.png">+64</option>
+                                    <option value="+507" data-flag="024-panama.png">+507</option>
+                                    <option value="+7" data-flag="025-rusia.png">+7</option>
+                                    <option value="+503" data-flag="026-el-salvador.png">+503</option>
+                                    <option value="+353" data-flag="027-irlanda.png">+353</option>
+                                    <option value="+591" data-flag="028-bolivia.png">+591</option>
+                                    <option value="+506" data-flag="029-costa-rica.png">+506</option>
+                                    <option value="+39" data-flag="030-italia.png">+39</option>
+                                    <option value="+45" data-flag="031-dinamarca.png">+45</option>
+                                    <option value="+593" data-flag="032-ecuador.png">+593</option>
+                                    <option value="+386" data-flag="033-eslovenia.png">+386</option>
+                                    <option value="+41" data-flag="034-suiza.png">+41</option>
+                                    <option value="+31" data-flag="035-paises-bajos.png">+31</option>
+                                    <option value="+370" data-flag="036-lituania.png">+370</option>
+                                    <option value="+359" data-flag="037-bulgaria.png">+359</option>
+                                    <option value="+504" data-flag="038-honduras.png">+504</option>
+                                    <option value="+20" data-flag="039-egipto.png">+20</option>
+                                    <option value="+58" data-flag="040-venezuela.png">+58</option>
+                                    <option value="+95" data-flag="041-myanmar.png">+95</option>
+                                    <option value="+221" data-flag="042-senegal.png">+221</option>
+                                    <option value="+385" data-flag="043-croacia.png">+385</option>
+                                    <option value="+352" data-flag="044-luxemburgo.png">+352</option>
+                                    <option value="+234" data-flag="045-nigeria.png">+234</option>
+                                    <option value="+98" data-flag="046-iran.png">+98</option>
+                                    <option value="+357" data-flag="047-chipre.png">+357</option>
+                                    <option value="+82" data-flag="048-corea-del-sur.png">+82</option>
+                                    <option value="+60" data-flag="049-malasia.png">+60</option>
+                                    <option value="+62" data-flag="050-indonesia.png">+62</option>
+                                    <option value="+54" data-flag="051-argentina.png">+54</option>
+                                    <option value="+53" data-flag="052-cuba.png">+53</option>
+                                    <option value="+243" data-flag="053-republica-democratica-del-congo.png">+243</option>
+                                    <option value="+1" data-flag="054-canada.png">+1</option>
+                                    <option value="+381" data-flag="055-serbia.png">+381</option>
+                                    <option value="+90" data-flag="056-turquia.png">+90</option>
+                                    <option value="+36" data-flag="057-hungria.png">+36</option>
+                                    <option value="+216" data-flag="058-tunez.png">+216</option>
+                                    <option value="+40" data-flag="059-rumania.png">+40</option>
+                                    <option value="+371" data-flag="060-letonia.png">+371</option>
+                                    <option value="+213" data-flag="061-argelia.png">+213</option>
+                                    <option value="+27" data-flag="062-sudafrica.png">+27</option>
+                                    <option value="+962" data-flag="063-jordania.png">+962</option>
+                                    <option value="+92" data-flag="064-pakistan.png">+92</option>
+                                    <option value="+32" data-flag="065-belgica.png">+32</option>
+                                    <option value="+421" data-flag="066-eslovaquia.png">+421</option>
+                                    <option value="+49" data-flag="067-alemania.png">+49</option>
+                                    <option value="+267" data-flag="068-botswana.png">+267</option>
+                                    <option value="+993" data-flag="069-turkmenistan.png">+993</option>
+                                    <option value="+966" data-flag="070-arabia-saudita.png">+966</option>
+                                    <option value="+66" data-flag="071-tailandia.png">+66</option>
+                                    <option value="+81" data-flag="072-japon.png">+81</option>
+                                    <option value="+995" data-flag="073-georgia.png">+995</option>
+                                    <option value="+973" data-flag="074-bahrein.png">+973</option>
+                                    <option value="+876" data-flag="075-jamaica.png">+876</option>
+                                    <option value="+265" data-flag="076-malawi.png">+265</option>                                    
+                                    <option value="+91" data-flag="077-india.png">+91</option>
+                                    <option value="+237" data-flag="078-camerun.png">+237</option>
+                                    <option value="+852" data-flag="079-hong-kong.png">+852</option>
+                                    <option value="+48" data-flag="080-polonia.png">+48</option>
+                                    <option value="+354" data-flag="081-islandia.png">+354</option>
+                                    <option value="+974" data-flag="082-katar.png">+974</option>
+                                    <option value="+374" data-flag="083-armenia.png">+374</option>
+                                    <option value="+65" data-flag="084-singapur.png">+65</option>                            
+                                    <option value="+47" data-flag="085-noruega.png">+47</option>
+                                    <option value="+46" data-flag="086-suecia.png">+46</option>
+                                    <option value="+890" data-flag="087-corea-del-norte.png">+890</option>
+                                    <option value="+905" data-flag="088-azerbaiyan.png">+905</option>
+                                    <option value="+830" data-flag="089-laos.png">+830</option>
+                                    <option value="+810" data-flag="091-checo.png">+810</option>
+                                    <option value="+30" data-flag="093-grecia.png">+30</option>
+                                    <option value="+43" data-flag="094-austria.png">+43</option>
+                                    <option value="+372" data-flag="095-estonia.png">+372</option>
+                                    <option value="+880" data-flag="096-bangladesh.png">+880</option>
+                                    <option value="+358" data-flag="097-finlandia.png">+358</option>
+                                    <option value="+674" data-flag="098-nauru.png">+674</option>
+                                    <option value="+44" data-flag="099-escocia.png">+44</option>
+                                    <option value="+380" data-flag="100-ucrania.png">+380</option>
+                                </select>
+                            </div>                                                 
+                            <div style="width: 70%;">
+                                <input type="tel" class="form-control" name="telefono" placeholder="Teléfono" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="cumpleaños">
+                    <h2>Queremos sorprenderte por tu cumpleaños</h2>
+                    <p>Indícanos tu fecha de nacimiento y recibirás un detalle el día de tu cumpleaños.</p>
+                    <div class="col-md-6">
+                        <input type="date" class="form-control" name="fecha_nacimiento" placeholder="Fecha de Nacimiento" required>
+                    </div>
+                    <div class="form-check d-flex align-items-start">
+                        <input class="form-check-input checkbox-custom me-2" type="checkbox" id="fidelidad" name="fidelidad">
+                        <label class="form-check-label" for="fidelidad">
+                            Deseo formar parte del programa de fidelidad SafaTel, de conformidad con lo
+                            dispuesto en los <a href="#" class="link-destacado">Términos y Condiciones del programa</a> y en la 
+                            <a href="#" class="link-destacado">Política de Privacidad</a>. 
+                            Si no quieres recibir información comercial, haz clic 
+                            <a href="#" class="link-destacado">aquí</a>.
+                        </label>
+                    </div>  
+                    <div class="btn-container">
+                        <button class="btn btn-primary" id="crear-cuenta" role="button">CREAR CUENTA</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const nav = document.querySelector("nav.navbar");
+            const main = document.querySelector("main");
+    
+            function ajustarMargen() {
+              if (nav && main) {
+                  const navHeight = nav.offsetHeight;
+                  main.style.marginTop = `${navHeight}px`;
+              }
+            }
+    
+            ajustarMargen(); // Ajuste inicial
+            window.addEventListener("resize", ajustarMargen); // Ajuste al cambiar tamaño de ventana
+          });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const storedUser = sessionStorage.getItem('user');
+                if (storedUser) {
+                    const user = JSON.parse(storedUser);
+                    const authButtons = document.getElementById('auth-buttons');
+                    const userInfo = document.getElementById('user-info');
+                    const userNameSpan = document.querySelector('.user-name');
+        
+                    // Ocultar el contenedor de autenticación forzadamente
+                    if (authButtons) {
+                        authButtons.style.setProperty('display', 'none', 'important');
+                    }
+        
+                    // Mostrar el contenedor de usuario forzadamente
+                    if (userInfo) {
+                        userInfo.style.setProperty('display', 'flex', 'important');
+                    }
+        
+                    // Actualizar el nombre de usuario
+                    if (userNameSpan) {
+                        userNameSpan.textContent = `${user.nombre} ${user.apellidos}`;
+                    }
+                }
+            });
+        </script>   
+        <script>
+            document.getElementById('crear-cuenta').addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                // Obtener datos del usuario
+                const nombre = document.querySelector('input[name="nombre"]').value.trim();
+                const apellidos = document.querySelector('input[name="apellidos"]').value.trim();
+        
+                if (!nombre || !apellidos) {
+                    alert("Por favor, ingresa tu nombre y apellidos.");
+                    return;
+                }
+        
+                // Guardar datos en sessionStorage
+                const userData = { nombre, apellidos };
+                sessionStorage.setItem('user', JSON.stringify(userData));
+        
+                // Ocultar el contenedor de botones de autenticación usando setProperty
+                const authButtons = document.getElementById('auth-buttons');
+                if (authButtons) {
+                    authButtons.style.setProperty('display', 'none', 'important');
+                }
+        
+                // Mostrar el contenedor de usuario
+                const userInfo = document.getElementById('user-info');
+                if (userInfo) {
+                    userInfo.style.setProperty('display', 'flex', 'important');
+                }
+        
+                // Actualizar el nombre de usuario
+                const userNameSpan = document.querySelector('.user-name');
+                if (userNameSpan) {
+                    userNameSpan.textContent = `${nombre} ${apellidos}`;
+                }
+        
+                // Redirigir a la página principal
+                window.location.href = 'safatel.html';
+            });
+        </script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Selecciona el elemento de log-out dentro de #user-info
+            const logoutBtn = document.querySelector('#user-info .log-out');
+            if (logoutBtn) {
+            logoutBtn.addEventListener('click', function() {
+                // Elimina el usuario del sessionStorage
+                sessionStorage.removeItem('user');
+
+                // Muestra el contenedor de autenticación forzando el estilo display: block !important
+                const authButtons = document.getElementById('auth-buttons');
+                if (authButtons) {
+                authButtons.style.setProperty('display', 'block', 'important');
+                }
+
+                // Oculta el contenedor de usuario forzando el estilo display: none !important
+                const userInfo = document.getElementById('user-info');
+                if (userInfo) {
+                userInfo.style.setProperty('display', 'none', 'important');
+                }
+            });
+            }
+        });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const select = document.querySelector(".select-paises");
+                const flagIcon = document.getElementById("flag-icon");
+
+                function updateFlag() {
+                    const selectedOption = select.options[select.selectedIndex];
+                    const flag = selectedOption.getAttribute("data-flag");
+                    flagIcon.src = `../imagenes/paises/png/${flag}`;
+                }
+
+                select.addEventListener("change", updateFlag);
+                updateFlag(); // Llamar al inicio para mostrar la bandera inicial
+            });
+        </script>
+    </body>
+</html>

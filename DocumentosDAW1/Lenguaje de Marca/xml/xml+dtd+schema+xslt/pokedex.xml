@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<!DOCTYPE pokedex SYSTEM "../xml+dtd+schema/pokedex.dtd">
+<?xml-stylesheet href="pokedex.xslt" type="text/xsl"?>
+
+<pokedex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="pokedex.xsd">
+    <pokemon nombre="bulbasur" num_pokedex="1" url_imagen="https://static.wikia.nocookie.net/espokemon/images/4/43/Bulbasaur.png">
+        <datos_generales>
+            <altura>0.45</altura>
+            <peso>20</peso>
+            <sexo>M|F</sexo>
+            <categoria>Semilla</categoria>
+            <habilidad>Espesura</habilidad>
+        </datos_generales>
+        <tipologia>
+            <tipos>
+                <tipo>
+                    <descripción>planta</descripción>
+                </tipo>
+            </tipos>
+            <debilidades>
+                <debilidad>
+                    <tipo>fuego</tipo>
+                    <efectividad>x2</efectividad>
+                </debilidad>
+                <debilidad>
+                    <tipo>volador</tipo>
+                    <efectividad>x2</efectividad>
+                </debilidad>
+            </debilidades>
+            <fortalezas>
+                <fortaleza>
+                    <tipo>Agua</tipo>
+                    <efectividad>x2</efectividad>
+                </fortaleza>
+                <fortaleza>
+                    <tipo>Tierra</tipo>
+                    <efectividad>x2</efectividad>
+                </fortaleza>
+            </fortalezas>
+        </tipologia>
+        <stats_base>
+            <ps>30</ps>
+            <at>10</at>
+            <def>12</def>
+            <spat>15</spat>
+            <spde>13</spde>
+            <vel>5</vel>
+        </stats_base>
+        <evoluciones>
+            <evolución>
+                <orden>-1</orden>
+                <num_pokedex>2</num_pokedex>
+            </evolución>
+        </evoluciones>
+    </pokemon>
+</pokedex>

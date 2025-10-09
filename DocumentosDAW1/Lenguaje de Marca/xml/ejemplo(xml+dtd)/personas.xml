@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+
+<!DOCTYPE personas SYSTEM "../persona.dtd">
+
+<personas>
+ <persona>
+    <nombre>Juan</nombre>
+    <apellidos>Pardo</apellidos>
+    <nacimiento dia="10" mes="Abril" anio="1982"></nacimiento>
+    <direccion>
+       <calle>Caoba, 1</calle>
+       <poblacion>Madrid</poblacion>
+       <provincia>Madrid</provincia>
+       <cpostal>28005</cpostal>
+    </direccion>
+    <varon></varon>
+    </persona>
+ </personas>

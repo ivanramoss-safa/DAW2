@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\formulario_evaluable.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Mi Hotel - Reserva Online</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Mi Hotel - Reserva Online</h1>
+        <form action="hotel.php" method="post">
+
+            <!-- Sección de Datos Personales -->
+            <div class="datos-personales">
+                <p>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="nombre" size="30">
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" size="30">
+                </p>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="telefono" size="30">
+                </p>
+                <p>
+                    <label for="eMail">eMail:</label>
+                    <input type="email" name="eMail" size="30">
+                </p>
+            </div>
+
+            <!-- Sección de Información de la Reserva -->
+            <div class="informacion-reserva">
+                <p>
+                    <label for="numero_de_noches">Número de noches:</label>
+                    <input type="text" name="numero_de_noches">
+                </p>
+                <p>
+                    <label for="fecha">Fecha de entrada:</label>
+                    <input type="date" name="fecha">
+                </p>
+            </div>
+
+            <!-- Sección de Tipo de Habitación -->
+            <div class="tipo-habitacion">
+                <p>Tipo de habitación:</p>
+                <div class="radio-options">
+                    <div class="simple">
+                    <input type="radio" name="habitacion" value="simple">
+                    <label for="simple">Simple</label>
+                    </div>
+                    <div class="doble">
+                    <input type="radio" name="habitacion" value="doble">
+                    <label for="doble">Doble</label>
+                    </div>
+                    <div class="matrimonio">
+                    <input type="radio" name="habitacion" value="matrimonio">
+                    <label for="matrimonio">Matrimonio</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Extras -->
+            <div class="extras">
+                <p>Extras:</p>
+                <div class="checkbox-options">
+                    <div class="desayuno">
+                    <input type="checkbox" name="desayuno" value="des">
+                    <label for="desayuno">Desayuno</label>
+                    </div>
+                    <div class="comida">
+                    <input type="checkbox" name="comida" value="com">
+                    <label for="comida">Comida</label>
+                    </div>
+                    <div class="cena">
+                    <input type="checkbox" name="cena" value="cen">
+                    <label for="cena">Cena</label>
+                    </div>
+                    <div class="cama_supletoria">
+                    <input type="checkbox" name="cama_supletoria" value="cam-sup">
+                    <label for="cama_supletoria">Cama supletoria</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Comentarios -->
+            <div class="comentarios">
+                <p>Comentarios:</p>
+                <textarea name="Comentarios"></textarea>
+            </div>
+
+            <!-- Sección de Botones -->
+            <div class="botones">
+                <p>
+                    <a href="mailto:reservas@mihotel.com.?subject=Reserva%20Hotel&body=Por%20favor%20envíe%20su%20mensaje%20aquí." class="submit">Enviar</a>
+                    <input type="reset" value="Borrar">
+                </p>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

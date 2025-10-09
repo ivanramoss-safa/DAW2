@@ -1,0 +1,10 @@
+<!ELEMENT piratas (biblioteca)>
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (titulo, autor, fechaPublicacion)>
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT autor (#PCDATA)>
+<!ATTLIST autor fechaNacimiento CDATA #IMPLIED>
+
+<!ELEMENT fechaPublicacion EMPTY>
+<!ATTLIST fechaPublicacion año CDATA #REQUIRED>

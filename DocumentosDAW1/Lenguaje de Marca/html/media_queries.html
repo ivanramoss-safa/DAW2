@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\media_queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3be1423991.js" crossorigin="anonymous"></script>
+    <title>Media Queries</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Sección de la información de la oficina -->
+        <div class="informacion-oficina">
+            <div class="ubicacion-oficina">
+                <i class="fa-solid fa-location-dot" style="color: #758173;"></i>
+                <h3>NUESTRA OFICINA PRINCIPAL</h3>
+                <p>Plaza Collao, Parque Alcosa, Sevilla 41019</p>
+            </div>
+            <div class="numero-telefono">
+                <i class="fa-solid fa-phone" style="color: #758173;"></i>
+                <h3>NÚMERO DE TELÉFONO</h3>
+                <p>+34 601 27 02 62 (llamada gratuita)</p>
+            </div>
+            <div class="fax">
+                <i class="fa-solid fa-fax" style="color: #758173;"></i>
+                <h3>FAX</h3>
+                <p>1-234-567-8900</p>
+            </div>
+            <div class="correo-electrónico">
+                <i class="fa-solid fa-envelope" style="color: #758173;"></i>
+                <h3>CORREO ELECTRÓNICO</h3>
+                <p><a href="mailto:ivanramoss2210@gmail.com">ivanramoss2210@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Sección de los datos de contacto -->
+        <div class="datos-y-mapa">
+            <div class="datos-contacto">
+                <h1>Datos de contacto</h1>
+                <form action="datos-contacto.php" method="post">
+                    <div class="email-name">
+                    <p>
+                        <label for="eMail">Email</label>
+                        <input type="email" name="eMail" size="30" placeholder="Enter a valid email adress">
+                    </p>
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="nombre" size="30" placeholder="Enter your name">
+                    </p>
+                    </div>
+                    <div class="comentarios">
+                        <p>Message</p>
+                        <textarea name="Comentarios" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="botón">
+                        <p>
+                            <input type="submit" value="ENVIAR">
+                        </p>
+                    </div>
+                    <h4 class="freepik">Imagen de <a href="https://www.freepik.com">Freepik</a></h4>    
+                </form>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1629231939082!2d-5.928534624256314!3d37.409623833110395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1268cc13a0b36f%3A0x818735234c169e3d!2sPl.%20Collao%2C%2041019%20Sevilla!5e0!3m2!1ses!2ses!4v1729704489636!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+</body>

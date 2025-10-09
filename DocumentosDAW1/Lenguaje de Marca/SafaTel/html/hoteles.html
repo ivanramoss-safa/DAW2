@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/safatel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>SafaTel</title>
+</head>
+  <body>
+    <header>
+      <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <a class="navbar-brand" href="../html/safatel.html">
+                <img src="../imagenes/SafaTel.png">
+            </a>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../html/safatel.html">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/hoteles.html">hoteles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ofertas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">¿quiénes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">acerca de</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-grid gap-2 d-md-block" id="auth-buttons">
+              <a class="btn btn-primary" href="../html/inicio-sesion.html" role="button">REGISTRARSE</a>
+              <a class="btn btn-primary" href="../html/inicio-sesion2.html" role="button">INICIAR SESIÓN</a>
+            </div>
+            <div id="user-info" class="hidden-element">
+              <img class="icono-cuenta" src="../imagenes/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+              <span class="user-name"></span>
+              <img class="log-out" src="../imagenes/logout_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+            </div>
+          </nav>
+        </div>
+    </header>
+    <main class="hoteles">
+      <div class="banner2">
+            <div class="texto-superior">
+              <h1 class="h1-v5">SafaTel</h1>
+              <h2 class="h2-v2">10 hoteles en 7 países distintos</h2>
+              <p class="p-v2">Mejor precio garantizado</p>
+            </div>
+            <!-- Barra de búsqueda para hoteles -->
+            <div id="hotel-search" class="container my-4">
+                <div class="row align-items-center">
+                <!-- Destino -->
+                <div class="col-md-4 mb-2">
+                    <div class="search-destination" tabindex="0" aria-label="Buscar destino">
+                    <label class="d-block">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="search-label">¿A dónde te gustaría ir?</span>
+                        </div>
+                        <div class="contenedor-buscar">
+                        <!-- Aquí agregarás el icono de destino -->
+                            <img src="../imagenes/location_on_24dp_026492_FILL0_wght400_GRAD0_opsz24.svg">
+                            <input type="text"
+                                class="form-control"
+                                placeholder="Elige el destino o el hotel"
+                                autocomplete="off"
+                                aria-autocomplete="both">
+                        </div>
+                    </label>
+                    </div>
+                </div>
+                <!-- Fechas -->
+                <div class="col-md-3 mb-2">
+                    <div class="search-dates" tabindex="0" role="button" id="dateBox">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="search-label">¿Cuándo?</span>
+                        <!-- Aquí agregarás el icono de calendario -->
+                        <span class="dates-icon"></span>
+                    </div>
+                    <div class="dates-options d-flex">
+                        <img src="../imagenes/calendar_month_24dp_026492_FILL0_wght400_GRAD0_opsz24.svg">
+                        <div class="date-option me-2">
+                        <span>Entrada</span>
+                        </div>
+                        <div class="date-option">
+                        <span>Salida</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Huéspedes -->
+                <div class="col-md-2 mb-2">
+                    <div class="search-guests" tabindex="0" role="button" id="guestsBox">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="search-label">Huéspedes</span>
+                    </div>
+                    <div class="guests-info  d-flex">
+                        <img src="../imagenes/person_24dp_026492_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span>2 Adultos</span>
+                        <span>-</span>
+                        <span>1 Habitación</span>
+                    </div>
+                    </div>
+                </div>
+                <!-- Código Promocional -->
+                <div class="col-md-2 mb-2" id="promoBox">
+                    <div class="promo-box" id="promoBox">
+                    <button type="button" class="btn btn-outline-secondary">
+                        <!-- Aquí agregarás el icono de promoción -->
+                        <span class="promo-icon"><img src="../imagenes/descuento3.png">Código</span>
+                        <span>promocional</span>
+                    </button>
+                    <!-- Contenedor para contenido promocional (si es necesario) -->
+                    <div class="promo-container mt-2" id="promoContainer" tabindex="-1">
+                        <!-- Contenido promocional -->
+                    </div>
+                    </div>
+                </div>
+                <!-- Botón de Buscar -->
+                <div class="col-md-1 mb-2">
+                    <div class="search-button" tabindex="0">
+                    <button id="searchBtn" type="button" class="btn btn-primary w-100">
+                        <!-- Aquí agregarás el icono de búsqueda -->
+                        <span class="search-btn-icon"></span>
+                        Buscar
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input checkbox-custom me-2" type="checkbox" id="transporte" name="transporte">
+              <label class="form-check-label" for="fidelidad">
+                ¿Necesitas transporte?
+            </label>
+            </div>
+        </div>
+      </div>
+      <div class="contenido">
+        <div class="lista-de-hoteles">
+          <h1 class="h1-v2">LISTA DE HOTELES</h1>
+          <p>Filtrar por:</p>
+          <div class="filtrar-por">
+            <div class="ubicacion">
+              <img src="../imagenes/location_on_24dp_026492_FILL0_wght400_GRAD0_opsz24.svg">
+              <div class="col-md-6">
+                <select class="form-select" name="ubicacion" required>
+                    <option value="" disabled selected>Ubicación</option>
+                    <option value="es">España</option>
+                    <option value="ru">Rusia</option>
+                    <option value="au">Australia</option>
+                    <option value="pa-fr">París, Francia</option>
+                    <option value="us">Roma, Italia</option>
+                    <option value="ca">Punta Cana, República Dominicana</option>
+                    <option value="br">Puerto Rico</option>
+                </select>
+              </div>
+            </div>
+            <div class="precio">
+              <!-- Ícono (opcional) -->
+              <img src="../imagenes/paid_24dp_026492_FILL0_wght400_GRAD0_opsz24.svg">
+              <div class="slider">
+                <div class="min-max">
+                  <span id="min-price">70€</span>
+                  <span id="max-price">400€</span>
+                </div>          
+                <!-- Contenedor para la pista y los dos sliders -->
+                <div class="slider-container">
+                  <!-- Pista negra de fondo -->
+                  <div class="slider-track"></div>
+              
+                  <!-- Slider para el valor mínimo -->
+                  <input 
+                    type="range" 
+                    id="rangeMin" 
+                    min="70" 
+                    max="400" 
+                    value="70" 
+                    step="10"
+                  />
+              
+                  <!-- Slider para el valor máximo -->
+                  <input 
+                    type="range" 
+                    id="rangeMax" 
+                    min="70" 
+                    max="400" 
+                    value="400" 
+                    step="10"
+                  />
+                </div>
+              </div>
+            </div>          
+            <div class="valoracion">
+              <img src="../imagenes/thumbs_up_down_24dp_026492_FILL0_wght400_GRAD0_opsz24.svg">
+              <div class="col-md-6">
+                <select class="form-select" name="valoracion" required>
+                    <option value="" disabled selected>Valoración</option>
+                    <option value=">=9">Fantástico: 9 o más</option>
+                    <option value=">=8">Muy bien: 8 o más</option>
+                    <option value=">=7">Bien: 7 o más</option>
+                    <option value=">=6">Agradable: 6 o más</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hoteles-card">
+          <div class="españa">
+            <h1 class="h1-v6">españa:</h1>
+            <div class="container mt-5">
+              <div class="row g-4">
+                  <!-- Tarjeta Madrid -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/GranVia.avif" class="card-img-top rounded-top-4" alt="Hotel Madrid">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">MADRID</span></h2>
+                              <p>Calle Gran Vía 45, 28013 Madrid</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">170€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Tarjeta Vigo -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/Vigo.avif" class="card-img-top rounded-top-4" alt="Hotel Vigo">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">VIGO</span></h2>
+                              <p>Rúa do Príncipe 12, 36202, Vigo</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">90€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+          </div>
+          <div class="rusia">
+            <h1 class="h1-v6">rusia:</h1>
+            <div class="container mt-5">
+              <div class="row g-4">
+                  <!-- Tarjeta Moscú -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/Moscu.webp" class="card-img-top rounded-top-4" alt="Hotel Moscú">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">MOSCÚ</span></h2>
+                              <p>Tverskaya Ulitsa 3, 125009 Moscú</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">300€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Tarjeta San Petersburgo -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/San Petersburgo.webp" class="card-img-top rounded-top-4" alt="Hotel San Petersburgo">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">San Petersburgo</span></h2>
+                              <p>Nevsky Prospekt 22, 191186 San Petersburgo</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">120€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+          </div>
+          <div class="australia">
+            <h1 class="h1-v6">australia:</h1>
+            <div class="container mt-5">
+              <div class="row g-4">
+                  <!-- Tarjeta Sídney -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/Sidney.jpg" class="card-img-top rounded-top-4" alt="Hotel Sídney">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">SÍDNEY</span></h2>
+                              <p>200 George St, Sídney NSW 2000, Australia</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">200€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Tarjeta Melbourne -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/Melbourne.jpg" class="card-img-top rounded-top-4" alt="Hotel Melbourne">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">Melbourne</span></h2>
+                              <p>123 Collins St, Melbourne VIC 3000, Australia</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">150€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+          </div>
+          <div class="europa">
+            <h1 class="h1-v6">europa:</h1>
+            <div class="container mt-5">
+              <div class="row g-4">
+                  <!-- Tarjeta París -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/Paris.avif" class="card-img-top rounded-top-4" alt="Hotel Paris">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">París</span></h2>
+                              <p>10 Avenue des Champs-Élysées 75008 París, Francia</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">desde 130€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Tarjeta Roma -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/roma.avif" class="card-img-top rounded-top-4" alt="Hotel Roma">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">Roma</span></h2>
+                              <p>Via Veneto 50, 00187 Roma RM, Italia</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">70€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+          </div>
+          <div class="nuevas-aperturas">
+            <h1 class="h1-v6">nuevas aperturas:</h1>
+            <div class="container mt-5">
+              <div class="row g-4">
+                  <!-- Tarjeta Punta Cana -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/PuntaCana.webp" class="card-img-top rounded-top-4" alt="Hotel Punta Cana">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">Punta Cana</span></h2>
+                              <p>Carretera Arena Gorda, Punta Cana 23000, RD</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">desde 220€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Tarjeta puerto rico -->
+                  <div class="col-md-6">
+                      <div class="card shadow-sm rounded-4 border-0">
+                        <div class="img-container">
+                          <img src="../imagenes/roma.avif" class="card-img-top rounded-top-4" alt="Hotel puerto rico">
+                        </div>
+                          <div class="card-body">
+                              <h2 class="h2-v3"><span class="text-primary">SAFATEL</span> <span class="fw-bolder">puerto rico</span></h2>
+                              <p>Avenida Ashford 1369, San Juan, 00907, Puerto Rico</p>
+                              <p class="fs-4 fw-bold">desde <span class="text-dark">400€</span></p>
+                              <a href="#" class="text-primary">Ver más detalles</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const nav = document.querySelector("nav.navbar");
+        const main = document.querySelector("main");
+
+        function ajustarMargen() {
+          if (nav && main) {
+              const navHeight = nav.offsetHeight;
+              main.style.marginTop = `${navHeight}px`;
+          }
+        }
+
+        ajustarMargen(); // Ajuste inicial
+        window.addEventListener("resize", ajustarMargen); // Ajuste al cambiar tamaño de ventana
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const storedUser = sessionStorage.getItem('user');
+          if (storedUser) {
+              const user = JSON.parse(storedUser);
+              const authButtons = document.getElementById('auth-buttons');
+              const userInfo = document.getElementById('user-info');
+              const userNameSpan = document.querySelector('.user-name');
+
+              // Ocultar el contenedor de autenticación forzadamente
+              if (authButtons) {
+                  authButtons.style.setProperty('display', 'none', 'important');
+              }
+
+              // Mostrar el contenedor de usuario forzadamente
+              if (userInfo) {
+                  userInfo.style.setProperty('display', 'flex', 'important');
+              }
+
+              // Actualizar el nombre de usuario
+              if (userNameSpan) {
+                  userNameSpan.textContent = `${user.nombre} ${user.apellidos}`;
+              }
+          }
+      });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Selecciona el elemento de log-out dentro de #user-info
+      const logoutBtn = document.querySelector('#user-info .log-out');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', function() {
+          // Elimina el usuario del sessionStorage
+          sessionStorage.removeItem('user');
+
+          // Muestra el contenedor de autenticación forzando el estilo display: block !important
+          const authButtons = document.getElementById('auth-buttons');
+          if (authButtons) {
+            authButtons.style.setProperty('display', 'block', 'important');
+          }
+
+          // Oculta el contenedor de usuario forzando el estilo display: none !important
+          const userInfo = document.getElementById('user-info');
+          if (userInfo) {
+            userInfo.style.setProperty('display', 'none', 'important');
+          }
+        });
+      }
+    });
+    </script>
+    <script>
+      const rangeMin  = document.getElementById("rangeMin");
+      const rangeMax  = document.getElementById("rangeMax");
+      const minPrice  = document.getElementById("min-price");
+      const maxPrice  = document.getElementById("max-price");
+
+      function updateValues() {
+        let minVal = parseInt(rangeMin.value);
+        let maxVal = parseInt(rangeMax.value);
+
+        // Evita que min supere a max
+        if (minVal > maxVal) {
+          rangeMin.value = maxVal;
+          minVal = maxVal;
+        }
+
+        // Actualiza los textos con los valores actuales
+        minPrice.textContent = minVal + "€";
+        maxPrice.textContent = maxVal + "€";
+      }
+
+      // Cada vez que se mueve un thumb, se recalculan los valores
+      rangeMin.addEventListener("input", updateValues);
+      rangeMax.addEventListener("input", updateValues);
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchInput = document.querySelector("#hotel-search input[type='text']");
+        const hotelCards = document.querySelectorAll(".hoteles-card .card");
+
+        searchInput.addEventListener("input", function() {
+            const searchText = this.value.toLowerCase();
+
+            hotelCards.forEach(card => {
+                const hotelName = card.querySelector("h2").textContent.toLowerCase();
+                const location = card.querySelector("p").textContent.toLowerCase();
+                
+                if (hotelName.includes(searchText) || location.includes(searchText)) {
+                    card.parentElement.style.display = "block";
+                } else {
+                    card.parentElement.style.display = "none";
+                }
+            });
+        });
+    });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const locationFilter = document.querySelector("select[name='ubicacion']");
+        const priceMin = document.getElementById("rangeMin");
+        const priceMax = document.getElementById("rangeMax");
+        const ratingFilter = document.querySelector("select[name='valoracion']");
+        const hotelCards = document.querySelectorAll(".hoteles-card .card");
+
+        function filtrarHoteles() {
+            const selectedLocation = locationFilter.value;
+            const minPrice = parseInt(priceMin.value);
+            const maxPrice = parseInt(priceMax.value);
+            const selectedRating = ratingFilter.value ? parseFloat(ratingFilter.value.replace(">=", "")) : 0;
+
+            hotelCards.forEach(card => {
+                const hotelLocation = card.parentElement.parentElement.parentElement.classList[0];
+                const hotelPrice = parseInt(card.querySelector(".fs-4 span").textContent.replace("€", ""));
+                const hotelVisible = (
+                    (selectedLocation === "" || hotelLocation.includes(selectedLocation)) &&
+                    (hotelPrice >= minPrice && hotelPrice <= maxPrice) &&
+                    (selectedRating === 0 || hotelPrice >= selectedRating)
+                );
+
+                card.parentElement.style.display = hotelVisible ? "block" : "none";
+            });
+        }
+
+        locationFilter.addEventListener("change", filtrarHoteles);
+        priceMin.addEventListener("input", filtrarHoteles);
+        priceMax.addEventListener("input", filtrarHoteles);
+        ratingFilter.addEventListener("change", filtrarHoteles);
+    });
+    </script>
+  </body>
+</html>

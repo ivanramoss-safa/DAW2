@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Ejercicio 1-->
+<cancion>
+    <titulo>Rock with you</titulo>
+    <compositor>Red Temperton</compositor>
+    <productor>Quincy Jones</productor>
+    <discografica>Epic</discografica>
+    <artista>Michael Jackson</artista>
+</cancion>
+
+<!--Ejercicio 2-->
+<cancion duracion="3:40" año="1979">
+    <titulo>Rock with you</titulo>
+    <compositores>
+        <compositor>
+            <nombre>Rod</nombre>
+            <apellidos>Temperton</apellidos>
+        </compositor>
+    </compositores>
+    <discografica>Epic</discografica>
+    <productores>
+        <productor>
+            <nombre>Quincy</nombre>
+            <apellidos>Jones</apellidos>
+        </productor>
+    </productores>
+    <artistas>
+        <artista>Michael Jackson</artista>
+    </artistas>
+</cancion>
+
+<!--Ejercicio 3-->
+<servidores>
+    <servidor>
+        <IDServidor>ADR</IDServidor>
+        <ubicacion>Sevilla</ubicacion>
+        <caracteristicas-hardware>
+            <placa-base tplaca="ATX">Supermicro</placa-base>
+            <TipoMem>
+                <CantMem amp="GB">456123</CantMem>
+                <VeloMem veloc="GHz">3455<VeloMem/>
+            </TipoMem>
+            <TecnHD>SSD</TecnHD>
+            <CapacHD ahd="Tb">7894221</CapacHD>
+            <TarjRed>f15w15ew</TarjRed>
+        </caracteristicas-hardware>
+        <marca>HP</marca>
+        <uso>Correo</uso>
+        <fecha_uf>2023-02-14</fecha_uf>
+    </servidor>
+
+    <servidor>
+        <IDServidor>ADR</IDServidor>
+        <ubicacion>Sevilla</ubicacion>
+        <caracteristicas-hardware>
+            <placa-base tplaca="ATX">Supermicro</placa-base>
+            <TipoMem>
+                <CantMem amp="GB">456123</CantMem>
+                <VeloMem veloc="GHz">3455<VeloMem/>
+            </TipoMem>
+            <TecnHD>SSD</TecnHD>
+            <CapacHD ahd="Tb">7894221</CapacHD>
+            <TarjRed>f15w15ew</TarjRed>
+        </caracteristicas-hardware>
+        <marca>HP</marca>
+        <uso>Correo</uso>
+        <fecha_uf>2023-02-14</fecha_uf>
+    </servidor>
+
+    <servidor>
+        <IDServidor>ADR</IDServidor>
+        <ubicacion>Sevilla</ubicacion>
+        <caracteristicas-hardware>
+            <placa-base tplaca="ATX">Supermicro</placa-base>
+            <TipoMem>
+                <CantMem amp="GB">456123</CantMem>
+                <VeloMem veloc="GHz">3455<VeloMem/>
+            </TipoMem>
+            <TecnHD>SSD</TecnHD>
+            <CapacHD ahd="Tb">7894221</CapacHD>
+            <TarjRed>f15w15ew</TarjRed>
+        </caracteristicas-hardware>
+        <marca>HP</marca>
+        <uso>Correo</uso>
+        <fecha_uf>2023-02-14</fecha_uf>
+    </servidor>
+</servidores>
+
+<!--Ejercicio 4-->
+<?xml version="1.0" encoding="UTF-8"?>
+<ebooks>
+    <ebook>
+        <titulo>Lenguaje de Marcas</titulo>
+        <autores>
+            <autor>Alex Tolon</autor>
+        </autores>
+        <modulo>LMSGI</modulo>
+        <licencia>CC3.0</licencia>
+        <fechaPublicacion>2011-09-15</fechaPublicacion>
+        <ISBN>978929212456</ISBN>
+        <lecciones>
+            <leccion>
+                <parrafos>
+                    <parrafo>Contenido del primer párrafo.</parrafo>
+                    <parrafo>Contenido del segundo párrafo.</parrafo>
+                </parrafos>
+                <imagenes>
+                    <imagen>imagen1.jpg</imagen>
+                </imagenes>
+                <autoevaluaciones>
+                    <autoevaluacion>Pregunta 1</autoevaluacion>
+                    <autoevaluacion>Pregunta 2</autoevaluacion>
+                </autoevaluaciones>
+                <ejercicios>
+                    <ejercicio>Ejercicio 1</ejercicio>
+                </ejercicios>
+            </leccion>
+            <leccion>
+                <parrafos>
+                    <parrafo>Contenido del primer párrafo.</parrafo>
+                    <parrafo>Contenido del segundo párrafo.</parrafo>
+                    <parrafo>Contenido del tercer párrafo.</parrafo>
+                </parrafos>
+                <animaciones>
+                    <animacion>animacion1.mp4</animacion>
+                </animaciones>
+                <autoevaluaciones>
+                    <autoevaluacion>Pregunta 1</autoevaluacion>
+                </autoevaluaciones>
+                <ejercicios>
+                    <ejercicio>Ejercicio 1</ejercicio>
+                </ejercicios>
+            </leccion>
+        </lecciones>
+    </ebook>
+    <ebook>
+        <titulo>Empresa e Iniciativa Emprendedora</titulo>
+        <autores>
+            <autor>Miguel Ángel Sánchez</autor>
+            <autor>Xabier Epelde</autor>
+        </autores>
+        <modulo>EIE</modulo>
+        <licencia>Public Domain</licencia>
+        <fechaPublicacion>2010-06-25</fechaPublicacion>
+        <ISBN>978439288416</ISBN>
+        <lecciones>
+            <leccion>
+                <parrafos>
+                    <parrafo>Contenido del primer párrafo.</parrafo>
+                    <parrafo>Contenido del segundo párrafo.</parrafo>
+                    <parrafo>Contenido del tercer párrafo.</parrafo>
+                </parrafos>
+                <animaciones>
+                    <animacion>animacion1.mp4</animacion>
+                    <animacion>animacion2.mp4</animacion>
+                </animaciones>
+                <autoevaluaciones>
+                    <autoevaluacion>Pregunta 1</autoevaluacion>
+                </autoevaluaciones>
+                <ejercicios>
+                    <ejercicio>Ejercicio 1</ejercicio>
+                    <ejercicio>Ejercicio 2</ejercicio>
+                </ejercicios>
+            </leccion>
+        </lecciones>
+    </ebook>
+</ebooks>

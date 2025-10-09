@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Ejercicio 1-->
+<figuras>
+    <figura tipo="plana">
+        <nombre>cuadrado</nombre>
+        <lados>4</lados>
+    </figura>
+    <figura tipo="plana">
+        <nombre>triángulo</nombre>
+        <lados>3</lados>
+    </figura>
+    <figura tipo="tridimensional">
+        <nombre>cubo</nombre>
+        <aristas>12</aristas>
+        <caras>6</caras>
+    </figura>
+</figuras>
+
+<!--Ejercicio 2-->
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos>
+    <terrestres>
+        <vehiculo>bicicleta</vehiculo>
+        <vehiculo>coche</vehiculo>
+        <vehiculo>tractor</vehiculo>
+    </terrestres>
+    <acuaticos>
+        <vehiculo>canoa</vehiculo>
+    </acuaticos>
+    <aereos>
+        <vehiculo>avioneta</vehiculo>
+        <vehiculo>helicóptero</vehiculo>
+    </aereos>
+</vehiculos>
+
+<!--Ejercicio 3-->
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos_de_futbol>
+    <equipo>
+        <nombre>Betis</nombre>
+        <ciudad>Sevilla</ciudad>
+        <entrenador>Manuel Pellegrini</entrenador>
+        <jugadores>
+            <jugador posicion="extremo">
+                <nombre>Antony</nombre>
+                <nacionalidad>brasileña</nacionalidad>
+            </jugador>
+            <jugador posicion="delantero">
+                <nombre>Cucho</nombre>
+                <nacionalidad>colombiano</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombre>Barcelona</nombre>
+        <ciudad>Barcelona</ciudad>
+        <entrenador>Hansi Flick</entrenador>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombre>Ter Stegen</nombre>
+                <nacionalidad>alemán</nacionalidad>
+            </jugador>
+            <jugador posicion="defensa">
+                <nombre>Pau Cubarsí</nombre>
+                <nacionalidad>española</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos_de_futbol>

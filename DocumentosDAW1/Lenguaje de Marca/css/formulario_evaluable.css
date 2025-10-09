@@ -1,0 +1,235 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("../imagenes/background.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+    animation: moverFondo 30s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+@keyframes moverFondo {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -512px -512px;
+    }
+}
+
+/* Contenedor del formulario */
+.container {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 5px solid;
+    border-color: #5365ff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+/* Sección de Datos Personales */
+.datos-personales p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.datos-personales label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.datos-personales input[type="text"],
+.datos-personales input[type="email"] {
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Sección de Información de la Reserva */
+.informacion-reserva p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+.informacion-reserva label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+.informacion-reserva input[type="text"] {
+    margin-left: 109px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.informacion-reserva input[type="date"] {
+    margin-left: 169px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Sección de Tipo de Habitación */
+.tipo-habitacion p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.radio-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
+
+.simple {
+    display: flex;
+    align-items: baseline;
+}
+
+.doble {
+    display: flex;
+    align-items: baseline;
+}
+
+.matrimonio {
+    display: flex;
+    align-items: baseline;
+}
+
+.tipo-habitacion input[type="radio"] {
+    margin-right: 5px;
+}
+
+.tipo-habitacion label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+/* Sección de Extras */
+.extras p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.checkbox-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.desayuno {
+    display: flex;
+    align-items: baseline;
+}
+
+.comida {
+    display: flex;
+    align-items: baseline;
+}
+
+.cena {
+    display: flex;
+    align-items: baseline;
+}
+
+.cama_supletoria {
+    display: flex;
+    align-items: baseline;
+}
+
+.extras input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.extras label {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Sección de Comentarios */
+.comentarios p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.comentarios textarea {
+    width: 95%;
+    height: 80px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    max-height: 70px;
+}
+
+/* Botones */
+.botones p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    background-color: #5365ff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+}
+
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+
