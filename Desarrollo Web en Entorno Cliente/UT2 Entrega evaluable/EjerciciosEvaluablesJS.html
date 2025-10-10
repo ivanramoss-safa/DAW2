@@ -7,14 +7,29 @@
         <script src="EjerciciosEvaluablesJS.js"></script>
     </head>
     <body>
-        <div class="ejercicio1" style="display: flex;align-items: center;flex-direction: column;">
+        <div class="ejercicio1" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
             <h1>Ejercicio 1</h1>
             <p>Introduce una frase de al menos 5 palabras</p>
             <input type="text" id="frase5palabras">
             <button onclick="ejercicio1()">
                 Resolver
             </button>
-            <p id="resultado1"></p>
+            <p id="resultadoValidacion"></p>
+            <p id="resultadoCaracteres"></p>
+            <p id="resultadoAsteriscos"></p>
+            <p id="resultadoGuionBajo"></p>
+        </div>
+
+        <div class="ejercicio2" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
+            <h1>Ejercicio 2</h1>
+            <p>Introduce 7 palabras variadas</p>
+            <input type="text" id="frase7palabras">
+            <button onclick="ejercicio2()">
+                Resolver
+            </button>
+            <p id="resultadoValidacion2" style="margin: 0 15% 2%;"></p>
+            <p id="validacionVariadas" style="margin: 0 15% 2%;"></p>
+            <p id="listadoOrdenado" style="margin: 0 15% 2%;"></p>
         </div>
     </body>
 </html>
