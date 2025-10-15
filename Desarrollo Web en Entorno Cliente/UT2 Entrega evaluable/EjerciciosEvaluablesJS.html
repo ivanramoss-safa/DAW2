@@ -11,9 +11,7 @@
             <h1>Ejercicio 1</h1>
             <p>Introduce una frase de al menos 5 palabras</p>
             <input type="text" id="frase5palabras">
-            <button onclick="ejercicio1()">
-                Resolver
-            </button>
+            <button onclick="ejercicio1()">Resolver</button>
             <p id="resultadoValidacion"></p>
             <p id="resultadoCaracteres"></p>
             <p id="resultadoAsteriscos"></p>
@@ -24,12 +22,51 @@
             <h1>Ejercicio 2</h1>
             <p>Introduce 7 palabras variadas</p>
             <input type="text" id="frase7palabras">
-            <button onclick="ejercicio2()">
-                Resolver
-            </button>
-            <p id="resultadoValidacion2" style="margin: 0 15% 2%;"></p>
-            <p id="validacionVariadas" style="margin: 0 15% 2%;"></p>
-            <p id="listadoOrdenado" style="margin: 0 15% 2%;"></p>
+            <button onclick="ejercicio2()">Resolver</button>
+            <p id="resultadoValidacion2" style="margin: 0 15% 2%; text-align: center;"></p>
+            <p id="validacionVariadas" style="margin: 0 15% 2%; text-align: center;"></p>
+            <p id="listadoOrdenado" style="margin: 0 15% 2%; text-align: center; white-space: pre-line;"></p>
+
+            <div id="buscadorPalabra" style="display: none; flex-direction: column; align-items: center; gap: 5px;">
+                <p>Introduce una palabra para buscar en el listado</p>
+                <input type="text" id="palabraUsuario">
+                <button onclick="buscarPalabra()">Buscar palabra</button>
+            </div>
+
+            <p id="resultadoBusqueda" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+        </div>
+        <div class="ejercicio3" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
+            <h1>Ejercicio 3</h1>
+            <button onclick="ejercicio3()">Iniciar Ejercicio 3</button>
+            <p id="listadoAlumnos" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+            <p id="alumnoEncontrado" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+            <p id="resultadoAlumno" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+        </div>
+        <div class="ejercicio4" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
+            <h1>Ejercicio 4</h1>
+            <button onclick="ejercicio4()">Iniciar Ejercicio 4</button>
+        </div>
+        <div class="ejercicio5" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
+            <h1>Ejercicio 5</h1>
+            <button onclick="ejercicio5()">Iniciar Ejercicio 5</button>
+            <p id="numerosUnicos" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+            <p id="mediaUnicos" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+        </div>
+        <div class="ejercicio6" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
+            <h1>Ejercicio 6</h1>
+            <button onclick="ejercicio6()">Iniciar Ejercicio 6</button>
+            <p id="resultadoPalindromo" style="margin: 0 15% 2%; text-align: center; white-space: pre-line"></p>
+        </div>
+        <div class="ejercicio7" style="display: flex;align-items: center;flex-direction: column; box-shadow: 0 0 10px;width: 50%;justify-self: center;gap: 10px;border-radius: 40px; margin: 20px;">
+            <h1>Ejercicio 7 - Lista de Tareas</h1>
+
+            <button onclick="agregarTarea()">Agregar tarea</button>
+            <button onclick="completarTarea()">Completar tarea</button>
+            <button onclick="eliminarTarea()">Eliminar tarea</button>
+            <button onclick="mostrarLista()">Mostrar lista completa</button>
+            <button onclick="mostrarPendientes()">Mostrar pendientes</button>
+
+            <p id="resultadoTareas" style="white-space: pre-line; text-align: center;"></p>
         </div>
     </body>
 </html>
