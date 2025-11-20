@@ -1,21 +1,19 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-fecha-hora',
+  selector: 'app-fecha-hora-component',
   imports: [CommonModule],
-  templateUrl: './FechaHoraComponent.html',
-  styleUrl: './FechaHoraComponent.css',
+  templateUrl: './fecha-hora-component.html',
+  styleUrl: './fecha-hora-component.css',
 })
-export class FechaHoraComponent implements OnInit, OnDestroy {
-
+export class FechaHoraComponent {
   fechaHora: Date = new Date();
   private intervaloId: any;
 
   ngOnInit(): void {
     this.intervaloId = setInterval(() => {
       this.fechaHora = new Date();
-      console.log(this.fechaHora);
     }, 1000);
   }
 
