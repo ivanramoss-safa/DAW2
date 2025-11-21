@@ -1,0 +1,17 @@
+<div class="ejercicio4">
+  <h1>Ej 4: Componente Interacción con Ventana hija</h1>
+
+  <div class="acciones-principales">
+    <button (click)="abrirVentana()" class="btn-abrir">Abrir Ventana</button>
+    <button (click)="cerrarVentana()" class="btn-cerrar">Cerrar Ventana</button>
+  </div>
+
+  <p>Controles de desplazamiento:</p>
+
+  <div class="pad-direccional">
+     <button (click)="moverVentana(0, -100)">Arriba</button>
+      <button (click)="moverVentana(-100, 0)">Izquierda</button>
+      <button (click)="moverVentana(100, 0)">Derecha</button>
+      <button (click)="moverVentana(0, 100)">Abajo</button>
+  </div>
+</div>

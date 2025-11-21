@@ -1,0 +1,30 @@
+<div class="ejercicio5">
+  <h1>Ej 5: Componente Manipulación de Cookies</h1>
+
+  @if (nombreUsuario) {
+    <div class="saludo-panel">
+      <h3>¡Hola de nuevo, {{ nombreUsuario }} !</h3>
+
+      <button (click)="borrarCookie()" class="btn-borrar">
+        Borrar Cookie
+      </button>
+    </div>
+  }
+
+  @else {
+    <div class="login-panel">
+      <label>¿Cómo te llamas?</label>
+
+      <div class="input-group">
+        <input type="text"
+               [(ngModel)]="nuevoNombre"
+               placeholder="Escribe tu nombre aquí"
+               (keyup.enter)="guardarNombre()">
+
+        <button (click)="guardarNombre()" class="btn-guardar">
+          Guardar
+        </button>
+      </div>
+    </div>
+  }
+</div>

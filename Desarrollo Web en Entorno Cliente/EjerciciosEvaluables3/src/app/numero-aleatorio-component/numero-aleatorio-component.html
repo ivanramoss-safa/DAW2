@@ -1,0 +1,21 @@
+<div class="ejercicio2">
+  <h1>Ej 2: Componente Generador de Números Aleatorios</h1>
+
+  <label>¿Cuántos números quieres generar?</label>
+  <input type="number" [(ngModel)]="cantidad" min="1">
+
+  <button (click)="generarNumeros()">Generar Serie</button>
+
+  @if (listaNumeros.length > 0) {
+  <div>
+    <h3>Resultados:</h3>
+    <ul>
+      @for (num of listaNumeros; track $index) {
+      <li>
+        Número generado: <strong>{{ num }}</strong>
+      </li>
+      }
+    </ul>
+  </div>
+  }
+</div>

@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-fecha-hora-component',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './fecha-hora-component.html',
   styleUrl: './fecha-hora-component.css',
 })
-export class FechaHoraComponent {
+export class FechaHoraComponent implements OnInit, OnDestroy {
   fechaHora: Date = new Date();
   private intervaloId: any;
 
